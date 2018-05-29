@@ -16,7 +16,8 @@
     "url": "https://github.com/mitsukan/drum-machine/issues"
   },
   "homepage": "https://github.com/mitsukan/drum-machine#readme",
-  "dependencies": {
+  "dependencies": {},
+  "devDependencies": {
     "jasmine": "^3.1.0"
   }
 }
