@@ -4,7 +4,7 @@
   "description": "Kanban Board: https://waffle.io/mitsukan/drum-machine",
   "main": "index.js",
   "scripts": {
-    "test": "Jasmine"
+    "test": "./node_modules/.bin/jasmine-node spec"
   },
   "repository": {
     "type": "git",
@@ -18,5 +18,11 @@
   "homepage": "https://github.com/mitsukan/drum-machine#readme",
   "dependencies": {
     "jasmine": "^3.1.0"
+  },
+  "devDependencies": {
+    "karma": "^2.0.2",
+    "karma-chrome-launcher": "^2.2.0",
+    "karma-firefox-launcher": "^1.1.0",
+    "karma-jasmine": "^1.1.2"
   }
 }
