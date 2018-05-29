@@ -4,7 +4,7 @@
   "description": "Kanban Board: https://waffle.io/mitsukan/drum-machine",
   "main": "index.js",
   "scripts": {
-    "test": "Jasmine"
+    "test": "./node_modules/.bin/jasmine-node spec"
   },
   "repository": {
     "type": "git",
