@@ -5,3 +5,4 @@ node_js:
 scirpt: node_modules/karma/bin/karma start my.conf.js --single-run
 before_script:
   - npm install
+  - npm install --save-dev jasmine
