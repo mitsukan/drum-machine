@@ -16,7 +16,9 @@
     "url": "https://github.com/mitsukan/drum-machine/issues"
   },
   "homepage": "https://github.com/mitsukan/drum-machine#readme",
-  "dependencies": {},
+  "dependencies": {
+    "howler": "^2.0.12"
+  },
   "devDependencies": {
     "cypress": "^3.0.0"
   }
