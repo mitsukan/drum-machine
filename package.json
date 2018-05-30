@@ -4,7 +4,8 @@
   "description": "Kanban Board: https://waffle.io/mitsukan/drum-machine",
   "main": "index.js",
   "scripts": {
-    "test": "cypress"
+    "test": "cypress",
+    "start": "node index.js"
   },
   "repository": {
     "type": "git",
