@@ -4,7 +4,7 @@
   "description": "Kanban Board: https://waffle.io/mitsukan/drum-machine",
   "main": "index.js",
   "scripts": {
-    "test": "jasmine"
+    "test": "cypress"
   },
   "repository": {
     "type": "git",
@@ -18,6 +18,6 @@
   "homepage": "https://github.com/mitsukan/drum-machine#readme",
   "dependencies": {},
   "devDependencies": {
-    "jasmine": "^3.1.0"
+    "cypress": "^3.0.0"
   }
 }
