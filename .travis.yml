@@ -4,6 +4,9 @@ node_js:
   - "8"
 cache:
   directories:
+    - ~/.npm
     - node_modules
-notifications:
-  email: false
+install:
+  - npm install
+script:
+  - $(npm bin)/cypress run --record
