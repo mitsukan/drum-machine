@@ -2,9 +2,10 @@
   "name": "drum-machine",
   "version": "1.0.0",
   "description": "Kanban Board: https://waffle.io/mitsukan/drum-machine",
-  "main": "index.js",
+  "main": "index.html",
   "scripts": {
-    "test": "jasmine"
+    "test": "jasmine",
+    "start": "index.html"
   },
   "repository": {
     "type": "git",
@@ -16,7 +17,8 @@
     "url": "https://github.com/mitsukan/drum-machine/issues"
   },
   "homepage": "https://github.com/mitsukan/drum-machine#readme",
-  "dependencies": {},
+  "dependencies": {
+  },
   "devDependencies": {
     "jasmine": "^3.1.0"
   }
