@@ -4,6 +4,7 @@
   "description": "Kanban Board: https://waffle.io/mitsukan/drum-machine",
   "main": "index.js",
   "scripts": {
+    "start": "serve .",
     "test": "cypress"
   },
   "repository": {
@@ -17,6 +18,7 @@
   },
   "homepage": "https://github.com/mitsukan/drum-machine#readme",
   "dependencies": {
+    "serve": "latest",
     "howler": "^2.0.12"
   },
   "devDependencies": {
