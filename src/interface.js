@@ -1,0 +1,11 @@
+$(document).ready(function(){
+  $("#header").load("drumhtml/header.html");
+  $("#drum1").load("drumhtml/drum1.html");
+  $("#drum2").load("drumhtml/drum2.html");
+  $("#drum3").load("drumhtml/drum3.html");
+  $("#drum4").load("drumhtml/drum4.html");
+  $("#drum5").load("drumhtml/drum5.html");
+  $("#drum6").load("drumhtml/drum6.html");
+  $("#drum7").load("drumhtml/drum7.html");
+  $("#drum8").load("drumhtml/drum8.html");
+});
