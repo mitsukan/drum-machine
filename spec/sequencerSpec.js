@@ -55,5 +55,17 @@ describe('Sequencer', function(){
     });
   });
 
+  describe('toggleNoteState', function(){
+    it('toggles the state of the note at the index passed as arg (0)', function(){
+      testSequencer.toggleNoteState(0);
+      expect(testSequencer.noteArray[0]).toBe(true);
+    });
+
+    it('toggles the state of the note at the index passed as arg (4)', function(){
+      testSequencer.toggleNoteState(4);
+      expect(testSequencer.noteArray[4]).toBe(true);
+    });
+  });
+
 
 });

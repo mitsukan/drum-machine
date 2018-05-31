@@ -1,6 +1,24 @@
 function Sequencer(soundObject) {
   this.sound = soundObject;
   this.baseTempoInMS = 500;
+  this.noteArray = [
+    false,
+    false,
+    false,
+    false,
+    false,
+    false,
+    false,
+    false,
+    false,
+    false,
+    false,
+    false,
+    false,
+    false,
+    false,
+    false
+  ];
 }
 
 Sequencer.prototype.playSound = function(){
@@ -14,4 +32,8 @@ Sequencer.prototype.playTrack = function(){
 
 Sequencer.prototype.stopTrack = function(){
   clearInterval(tempoInterval);
+};
+
+Sequencer.prototype.toggleNoteState = function(noteIndex){
+  this.noteArray[noteIndex] = !this.noteArray[noteIndex];
 };
