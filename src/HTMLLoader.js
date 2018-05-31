@@ -8,4 +8,5 @@ $(document).ready(function(){
   $("#drum6").load("drumhtml/drum6.html");
   $("#drum7").load("drumhtml/drum7.html");
   $("#drum8").load("drumhtml/drum8.html");
+  $("#footer").load("drumhtml/footer.html");
 });
