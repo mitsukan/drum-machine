@@ -1,6 +1,6 @@
 function Sequencer(soundObject) {
   this.sound = soundObject;
-  this.baseTempoInMS = 500;
+  this.tempoInMS = 500;
   this.noteArray = [
     false,
     false,
@@ -19,15 +19,34 @@ function Sequencer(soundObject) {
     false,
     false
   ];
+  this.playHead = 0;
 }
 
-Sequencer.prototype.playSound = function(){
-  this.sound.play();
+Sequencer.prototype.playSound = function(noteState){
+  if (noteState === true) {
+    this.sound.play();
+  }
+};
+
+Sequencer.prototype.updatePlayHead = function() {
+  if (this.playHead === 15) {
+    this.playHead = 0;
+  } else {
+    this.playHead++;
+  }
 };
 
 Sequencer.prototype.playTrack = function(){
-  this.playSound();
-  tempoInterval = setInterval(this.playSound.bind(this), this.baseTempoInMS);
+  var self = this;
+  // console.log(this.playHead + " " + this.noteArray[this.playHead]);
+  this.playSound(this.noteArray[this.playHead]);
+  this.updatePlayHead();
+  // console.log(this.playHead + " " + this.noteArray[this.playHead]);
+  tempoInterval = setInterval(function(){
+    this.playSound(this.noteArray[this.playHead]);
+    this.updatePlayHead();
+    // console.log(this.playHead + " " + this.noteArray[this.playHead]);
+  }.bind(this), this.tempoInMS);
 };
 
 Sequencer.prototype.stopTrack = function(){
