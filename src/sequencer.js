@@ -26,6 +26,7 @@ function Sequencer(soundObject) {
 Sequencer.prototype.playSound = function(noteState){
   if (noteState === true) {
     this.sound.play();
+
   }
 };
 

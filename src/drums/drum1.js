@@ -6,6 +6,14 @@ $(window).on('load', function () {
 
   var drummer1 = new Sequencer(drum1);
 
+  drum1.on("play", function(){
+    $("#box").addClass("bounce-7");
+  });
+
+  drum1.on("end", function(){
+    $("#box").removeClass("bounce-7");
+  });
+
   $("#mute1").click(function(){
     drummer1.muteTrack();
   });
