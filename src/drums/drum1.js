@@ -19,6 +19,14 @@ d1_16 = false
 $(document).ready(function(){
   $(window).on('load', function () {
 
+    $("#mute1").change(function(){
+      if(this.checked){
+        console.log("drum1 has been muted")
+      } else {
+        console.log("drum1 unmuted")
+      }
+    });
+
     $("#d1-1").click(function(){
       changeColor(this, d1_1, 'rgb(60, 184, 158)');
       d1_1 = !d1_1
@@ -99,6 +107,7 @@ $(document).ready(function(){
       changeColor(this, d1_16, 'rgb(60, 184, 158)');
       d1_16 = !d1_16
     });
+
 
   });
 });

@@ -19,6 +19,14 @@ d7_16 = false
 $(document).ready(function(){
   $(window).on('load', function () {
 
+    $("#mute7").change(function(){
+      if(this.checked){
+        console.log("drum7 has been muted")
+      } else {
+        console.log("drum7 unmuted")
+      }
+    });
+
     $("#d7-1").click(function(){
       changeColor(this, d7_1, 'rgb(237, 82, 118)');
       d7_1 = !d7_1;
