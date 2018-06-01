@@ -20,6 +20,6 @@
     "howler": "^2.0.12"
   },
   "devDependencies": {
-    "cypress": "^3.0.0"
+    "cypress": "^3.0.1"
   }
 }
