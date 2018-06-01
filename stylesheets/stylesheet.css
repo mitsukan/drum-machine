@@ -10,6 +10,39 @@ table, th, td {
   height: 30px;
 }
 
+.d1-btn.active {
+  background-color: rgb(60, 152, 158) !important;
+}
+
+.d2-btn.active {
+  background-color: rgb(134, 151, 224) !important;
+}
+
+.d3-btn.active {
+  background-color: rgb(130, 237, 234) !important;
+}
+
+.d4-btn.active {
+  background-color: rgb(112, 222, 131) !important;
+}
+
+.d5-btn.active {
+  background-color: rgb(235, 235, 108) !important;
+}
+
+.d6-btn.active {
+  background-color: rgb(245, 122, 130) !important;
+}
+
+.d7-btn.active {
+  background-color: rgb(237, 82, 118) !important;
+}
+
+.d8-btn.active {
+  background-color: rgb(172, 149, 247) !important;
+}
+
+
 /* toggle switch */
 
 .switch {

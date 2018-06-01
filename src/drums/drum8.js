@@ -1,112 +1,100 @@
-d8_1 = false
-d8_2 = false
-d8_3 = false
-d8_4 = false
-d8_5 = false
-d8_6 = false
-d8_7 = false
-d8_8 = false
-d8_9 = false
-d8_10 = false
-d8_11 = false
-d8_12 = false
-d8_13 = false
-d8_14 = false
-d8_15 = false
-d8_16 = false
+$(window).on('load', function () {
 
-
-$(document).ready(function(){
-  $(window).on('load', function () {
-
-    $("#mute8").change(function(){
-      if(this.checked){
-        console.log("drum8 has been muted")
-      } else {
-        console.log("drum8 unmuted")
-      }
-    });
-
-    $("#d8-1").click(function(){
-      changeColor(this, d8_1, 'rgb(172, 149, 247)');
-      d8_1 = !d8_1;
-    });
-
-    $("#d8-2").click(function(){
-      changeColor(this, d8_2, 'rgb(172, 149, 247)');
-      d8_2 = !d8_2;
-    });
-
-    $("#d8-3").click(function(){
-      changeColor(this, d8_3, 'rgb(172, 149, 247)');
-      d8_3 = !d8_3;
-    });
-
-    $("#d8-4").click(function(){
-      changeColor(this, d8_4, 'rgb(172, 149, 247)');
-      d8_4 = !d8_4;
-    });
-
-    $("#d8-5").click(function(){
-      changeColor(this, d8_5, 'rgb(172, 149, 247)');
-      d8_5 = !d8_5;
-    });
-
-    $("#d8-6").click(function(){
-      changeColor(this, d8_6, 'rgb(172, 149, 247)');
-      d8_6 = !d8_6;
-    });
-
-    $("#d8-7").click(function(){
-      changeColor(this, d8_7, 'rgb(172, 149, 247)');
-      d8_7 = !d8_7;
-    });
-
-    $("#d8-8").click(function(){
-      changeColor(this, d8_8, 'rgb(172, 149, 247)');
-      d8_8 = !d8_8;
-    });
-
-    $("#d8-9").click(function(){
-      changeColor(this, d8_9, 'rgb(172, 149, 247)');
-      d8_9 = !d8_9;
-    });
-
-    $("#d8-10").click(function(){
-      changeColor(this, d8_10, 'rgb(172, 149, 247)');
-      d8_10 = !d8_10;
-    });
-
-    $("#d8-11").click(function(){
-      changeColor(this, d8_11, 'rgb(172, 149, 247)');
-      d8_11 = !d8_11;
-    });
-
-
-    $("#d8-12").click(function(){
-      changeColor(this, d8_12, 'rgb(172, 149, 247)');
-      d8_12 = !d8_12;
-    });
-
-    $("#d8-13").click(function(){
-      changeColor(this, d8_13, 'rgb(172, 149, 247)');
-      d8_13 = !d8_13;
-    });
-
-    $("#d8-14").click(function(){
-      changeColor(this, d8_14, 'rgb(172, 149, 247)');
-      d8_14 = !d8_14;
-    });
-
-    $("#d8-15").click(function(){
-      changeColor(this, d8_15, 'rgb(172, 149, 247)');
-      d8_15 = !d8_15;
-    });
-
-    $("#d8-16").click(function(){
-      changeColor(this, d8_16, 'rgb(172, 149, 247)');
-      d8_16 = !d8_16;
-    });
-
+  var drum8 = new Howl({
+    src: ['audio/???.mp3']
   });
+
+  var drummer8 = new Sequencer(drum8);
+
+  $("#mute1").click(function(){
+    drummer8.muteTrack();
+  });
+
+  $("#d1-1").click(function(){
+    drummer8.toggleNoteState(0);
+    drummer8.sound.play();
+  });
+
+  $("#d1-2").click(function(){
+    drummer8.toggleNoteState(1);
+    drummer8.sound.play();
+  });
+
+  $("#d1-3").click(function(){
+    drummer8.toggleNoteState(2);
+    drummer8.sound.play();
+  });
+
+  $("#d1-4").click(function(){
+    drummer8.toggleNoteState(3);
+    drummer8.sound.play();
+  });
+
+  $("#d1-5").click(function(){
+    drummer8.toggleNoteState(4);
+    drummer8.sound.play();
+  });
+
+  $("#d1-6").click(function(){
+    drummer8.toggleNoteState(5);
+    drummer8.sound.play();
+  });
+
+  $("#d1-7").click(function(){
+    drummer8.toggleNoteState(6);
+    drummer8.sound.play();
+  });
+
+  $("#d1-8").click(function(){
+    drummer8.toggleNoteState(7);
+    drummer8.sound.play();
+  });
+  $("#d1-9").click(function(){
+    drummer8.toggleNoteState(8);
+    drummer8.sound.play();
+  });
+  $("#d1-10").click(function(){
+    drummer8.toggleNoteState(9);
+    drummer8.sound.play();
+  });
+
+  $("#d1-11").click(function(){
+    drummer8.toggleNoteState(10);
+    drummer8.sound.play();
+  });
+
+
+  $("#d1-12").click(function(){
+    drummer8.toggleNoteState(11);
+    drummer8.sound.play();
+  });
+
+  $("#d1-13").click(function(){
+    drummer8.toggleNoteState(12);
+    drummer8.sound.play();
+  });
+
+  $("#d1-14").click(function(){
+    drummer8.toggleNoteState(13);
+    drummer8.sound.play();
+  });
+
+  $("#d1-15").click(function(){
+    drummer8.toggleNoteState(14);
+    drummer8.sound.play();
+  });
+
+  $("#d1-16").click(function(){
+    drummer8.toggleNoteState(15);
+    drummer8.sound.play();
+  });
+
+  $('#playButton').click(function(){
+    drummer8.playTrack();
+  });
+
+  $('#stopButton').click(function(){
+    drummer8.stopTrack();
+  });
+
 });
