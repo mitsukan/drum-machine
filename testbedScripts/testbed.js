@@ -139,6 +139,15 @@ $('#clap-16').click(function(){
   testClapper.toggleNoteState(15);
 });
 
+/// MUTE BUTTONS
+
+$('#muteKick').click(function(){
+  testDrummer.muteTrack();
+});
+
+$('#muteClap').click(function(){
+  testClapper.muteTrack();
+});
 
 /// PLAY STOP BUTTONS
 

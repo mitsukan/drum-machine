@@ -67,3 +67,11 @@ Sequencer.prototype.pauseTrack = function(){
 Sequencer.prototype.toggleNoteState = function(noteIndex){
   this.noteArray[noteIndex] = !this.noteArray[noteIndex];
 };
+
+Sequencer.prototype.muteTrack = function(muteState){
+  if (this.sound._muted === false) {
+    this.sound.mute(true);
+  } else {
+    this.sound.mute(false);
+  }
+};

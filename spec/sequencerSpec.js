@@ -6,7 +6,9 @@ describe('Sequencer', function(){
     testSound = {
       play: function(){
         return true;
-      }
+      },
+      mute: null,
+      _muted: false
     };
     testSequencer = new Sequencer(testSound);
     testSequencer.tempoInMS = 500;
@@ -148,7 +150,20 @@ describe('Sequencer', function(){
     });
   });
 
+  describe('muteTrack', function(){
+    it('calls .mute on the sound obj with true if track is not muted', function(){
+      spyOn(testSound, 'mute');
+      testSequencer.muteTrack();
+      expect(testSequencer.sound.mute).toHaveBeenCalledWith(true);
+    });
 
+    it('calls .mute on the sound obj with false if track IS muted', function(){
+      spyOn(testSound, 'mute');
+      testSound._muted = true;
+      testSequencer.muteTrack();
+      expect(testSequencer.sound.mute).toHaveBeenCalledWith(false);
+    });
+  });
 
 
 });
