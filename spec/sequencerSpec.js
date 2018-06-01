@@ -9,6 +9,7 @@ describe('Sequencer', function(){
       }
     };
     testSequencer = new Sequencer(testSound);
+    testSequencer.tempoInMS = 500;
     jasmine.clock().install();
   });
 
@@ -55,6 +56,11 @@ describe('Sequencer', function(){
   });
 
   describe('playTrack', function(){
+    it('sets isPlaying to true', function(){
+      testSequencer.playTrack();
+      expect(testSequencer.isPlaying).toBe(true);
+    });
+
     it('calls playSound once at the start', function(){
       spyOn(testSequencer, 'playSound');
       testSequencer.playTrack();
@@ -76,10 +82,36 @@ describe('Sequencer', function(){
       jasmine.clock().tick(501);
       expect(testSequencer.playSound).toHaveBeenCalledWith(true);
     });
+
+    it('pauses if called while track is playing', function(){
+      spyOn(testSequencer, 'pauseTrack');
+      testSequencer.playTrack();
+      testSequencer.playTrack();
+      expect(testSequencer.pauseTrack).toHaveBeenCalled();
+    });
+  });
+
+  describe('pauseTrack', function(){
+    it('stops the calls to playSound', function(){
+      spyOn(testSequencer, 'playSound');
+      testSequencer.playTrack();
+      jasmine.clock().tick(501);
+      expect(testSequencer.playSound).toHaveBeenCalledTimes(2);
+      testSequencer.pauseTrack();
+      jasmine.clock().tick(5000);
+      expect(testSequencer.playSound).toHaveBeenCalledTimes(2);
+    });
+
+    it('resets isPlaying when called', function(){
+      testSequencer.playTrack();
+      testSequencer.pauseTrack();
+      expect(testSequencer.isPlaying).toBe(false);
+    });
   });
 
   describe('stopTrack', function(){
     it('stops the calls to playSound', function(){
+
       spyOn(testSequencer, 'playSound');
       testSequencer.playTrack();
       jasmine.clock().tick(501);
@@ -87,6 +119,19 @@ describe('Sequencer', function(){
       testSequencer.stopTrack();
       jasmine.clock().tick(5000);
       expect(testSequencer.playSound).toHaveBeenCalledTimes(2);
+    });
+
+    it('resets the playHead', function(){
+      testSequencer.playTrack();
+      jasmine.clock().tick(1000);
+      testSequencer.stopTrack();
+      expect(testSequencer.playHead).toEqual(0);
+    });
+
+    it('resets isPlaying when called', function(){
+      testSequencer.playTrack();
+      testSequencer.stopTrack();
+      expect(testSequencer.isPlaying).toBe(false);
     });
   });
 
