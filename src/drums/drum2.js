@@ -1,119 +1,111 @@
-clicked2_1 = false
-clicked2_2 = false
-clicked2_3 = false
-clicked2_4 = false
-clicked2_5 = false
-clicked2_6 = false
-clicked2_7 = false
-clicked2_8 = false
-clicked2_9 = false
-clicked2_10 = false
-clicked2_11 = false
-clicked2_12 = false
-clicked2_13 = false
-clicked2_14 = false
-clicked2_15 = false
-clicked2_16 = false
+d2_1 = false
+d2_2 = false
+d2_3 = false
+d2_4 = false
+d2_5 = false
+d2_6 = false
+d2_7 = false
+d2_8 = false
+d2_9 = false
+d2_10 = false
+d2_11 = false
+d2_12 = false
+d2_13 = false
+d2_14 = false
+d2_15 = false
+d2_16 = false
 
 
 $(document).ready(function(){
   $(window).on('load', function () {
 
+    $("#mute2").change(function(){
+      if(this.checked){
+        console.log("drum2 has been muted")
+      } else {
+        console.log("drum2 unmuted")
+      }
+    });
+
     $("#d2-1").click(function(){
-      var color = clicked2_1 ? 'white' : 'rgb(255, 145, 0)';
-      $(this).css('background-color', color);
-      clicked2_1 = !clicked2_1;
+      changeColor(this, d2_1, 'rgb(134, 151, 224)');
+      d2_1 = !d2_1;
     });
 
     $("#d2-2").click(function(){
-      var color = clicked2_2 ? 'white' : 'rgb(255, 145, 0)';
-      $(this).css('background-color', color);
-      clicked2_2 = !clicked2_2;
+      changeColor(this, d2_2, 'rgb(134, 151, 224)');
+      d2_2 = !d2_2;
     });
 
     $("#d2-3").click(function(){
-      var color = clicked2_3 ? 'white' : 'rgb(255, 145, 0)';
-      $(this).css('background-color', color);
-      clicked2_3 = !clicked2_3;
+      changeColor(this, d2_3, 'rgb(134, 151, 224)');
+      d2_3 = !d2_3;
     });
 
     $("#d2-4").click(function(){
-      var color = clicked2_4 ? 'white' : 'rgb(255, 145, 0)';
-      $(this).css('background-color', color);
-      clicked2_4 = !clicked2_4;
+      changeColor(this, d2_4, 'rgb(134, 151, 224)');
+      d2_4 = !d2_4;
     });
 
     $("#d2-5").click(function(){
-      var color = clicked2_5 ? 'white' : 'rgb(255, 145, 0)';
-      $(this).css('background-color', color);
-      clicked2_5 = !clicked2_5;
+      changeColor(this, d2_5, 'rgb(134, 151, 224)');
+      d2_5 = !d2_5;
     });
 
     $("#d2-6").click(function(){
-      var color = clicked2_6 ? 'white' : 'rgb(255, 145, 0)';
-      $(this).css('background-color', color);
-      clicked2_6 = !clicked2_6;
+      changeColor(this, d2_6, 'rgb(134, 151, 224)');
+      d2_6 = !d2_6;
     });
 
     $("#d2-7").click(function(){
-      var color = clicked2_7 ? 'white' : 'rgb(255, 145, 0)';
-      $(this).css('background-color', color);
-      clicked2_7 = !clicked2_7;
+      changeColor(this, d2_7, 'rgb(134, 151, 224)');
+      d2_7 = !d2_7;
     });
 
     $("#d2-8").click(function(){
-      var color = clicked2_8 ? 'white' : 'rgb(255, 145, 0)';
-      $(this).css('background-color', color);
-      clicked2_8 = !clicked2_8;
+      changeColor(this, d2_8, 'rgb(134, 151, 224)');
+      d2_8 = !d2_8;
     });
 
     $("#d2-9").click(function(){
-      var color = clicked2_9 ? 'white' : 'rgb(255, 145, 0)';
-      $(this).css('background-color', color);
-      clicked2_9 = !clicked2_9;
+      changeColor(this, d2_9, 'rgb(134, 151, 224)');
+      d2_9 = !d2_9;
     });
 
     $("#d2-10").click(function(){
-      var color = clicked2_10 ? 'white' : 'rgb(255, 145, 0)';
-      $(this).css('background-color', color);
-      clicked2_10 = !clicked2_10;
+      changeColor(this, d2_10, 'rgb(134, 151, 224)');
+      d2_10 = !d2_10;
     });
 
     $("#d2-11").click(function(){
-      var color = clicked2_11 ? 'white' : 'rgb(255, 145, 0)';
-      $(this).css('background-color', color);
-      clicked2_11 = !clicked2_11;
+      changeColor(this, d2_11, 'rgb(134, 151, 224)');
+      d2_11 = !d2_11;
     });
 
 
     $("#d2-12").click(function(){
-      var color = clicked2_12 ? 'white' : 'rgb(255, 145, 0)';
-      $(this).css('background-color', color);
-      clicked2_12 = !clicked2_12;
+      changeColor(this, d2_12, 'rgb(134, 151, 224)');
+      d2_12 = !d2_12;
     });
 
     $("#d2-13").click(function(){
-      var color = clicked2_13 ? 'white' : 'rgb(255, 145, 0)';
-      $(this).css('background-color', color);
-      clicked2_13 = !clicked2_13;
+      changeColor(this, d2_13, 'rgb(134, 151, 224)');
+      d2_13 = !d2_13;
     });
 
     $("#d2-14").click(function(){
-      var color = clicked2_14 ? 'white' : 'rgb(255, 145, 0)';
-      $(this).css('background-color', color);
-      clicked2_14 = !clicked2_14;
+      changeColor(this, d2_14, 'rgb(134, 151, 224)');
+      d2_14 = !d2_14;
     });
 
     $("#d2-15").click(function(){
-      var color = clicked2_15 ? 'white' : 'rgb(255, 145, 0)';
-      $(this).css('background-color', color);
-      clicked2_15 = !clicked2_15;
+      changeColor(this, d2_15, 'rgb(134, 151, 224)');
+      d2_15 = !d2_15;
     });
 
     $("#d2-16").click(function(){
-      var color = clicked2_16 ? 'white' : 'rgb(255, 145, 0)';
-      $(this).css('background-color', color);
-      clicked2_16 = !clicked2_16;
+      changeColor(this, d2_16, 'rgb(134, 151, 224)');
+      d2_16 = !d2_16;
     });
 
   });
