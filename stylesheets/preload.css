@@ -1,0 +1,13 @@
+.preload {
+	position: fixed;
+	left: 0px;
+	top: 0px;
+	width: 100%;
+	height: 100%;
+	z-index: 9999;
+	background: url("https://bransonarts.org/wp-content/uploads/2017/03/a_infinity_loader.gif") 50% 50% no-repeat rgb(255, 255, 255);
+}
+
+/* Other loader example *?
+
+/* 'https://i.pinimg.com/originals/15/1a/c1/151ac1da32a17de97d6fcac29e112a2d.jpg' */
