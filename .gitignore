@@ -67,3 +67,5 @@ typings/
 .serverless
 
 cypress
+
+video/
