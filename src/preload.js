@@ -4,7 +4,7 @@ $(document).ready(function() {
     };
 });
 
-/* the below is working but not remocing the div element */
+/* the below is working but not removing the div element */
 
 // $(function(){
 //     $(".preload").fadeOut(3000, function() {
