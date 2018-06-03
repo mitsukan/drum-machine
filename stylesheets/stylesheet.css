@@ -133,3 +133,18 @@ label {
     64%  { transform: scale(1,1)      translateY(0); }
     100% { transform: scale(1,1)      translateY(0); }
 }
+
+/* buttons animation */
+
+.badge-secondary {
+  color:rgb(255, 255, 255);
+  background-color: rgba(132, 142, 150, 0.72);
+}
+
+.badge-light {
+  color:rgb(85, 85, 91);
+}
+
+th {
+  font-size: 18px;
+}

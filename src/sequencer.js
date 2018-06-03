@@ -43,11 +43,13 @@ Sequencer.prototype.playTrack = function(){
     this.pauseTrack();
   } else {
     this.isPlaying = true;
-    console.log(this.playHead);
+    // console.log(this.playHead);
     this.playSound(this.noteArray[this.playHead]);
     this.updatePlayHead();
     this.tempoInterval = setInterval(function(){
-      console.log(this.playHead);
+      footerFlash(this.playHead)
+      headerFlash(this.playHead)
+      // console.log(this.playHead);
       this.playSound(this.noteArray[this.playHead]);
       this.updatePlayHead();
     }.bind(this), this.tempoInMS);
