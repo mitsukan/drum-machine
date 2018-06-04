@@ -1,3 +1,28 @@
+var playAllTracksTwice = function(){
+  drummer1.playTrack();
+  drummer1.playTrack();
+  drummer2.playTrack();
+  drummer2.playTrack();
+  drummer3.playTrack();
+  drummer3.playTrack();
+  drummer4.playTrack();
+  drummer4.playTrack();
+  drummer5.playTrack();
+  drummer5.playTrack();
+  drummer6.playTrack();
+  drummer6.playTrack();
+  drummer7.playTrack();
+  drummer7.playTrack();
+  drummer8.playTrack();
+  drummer8.playTrack();
+};
+
+var updateBPMDisplay = function() {
+  $('#tempoDisplay').text(function(){
+    return drummer1.bpm;
+  });
+};
+
 $('#decreaseTempo10').click(function(){
   drummer1.decreaseTempo(10);
   drummer2.decreaseTempo(10);
@@ -7,25 +32,8 @@ $('#decreaseTempo10').click(function(){
   drummer6.decreaseTempo(10);
   drummer7.decreaseTempo(10);
   drummer8.decreaseTempo(10);
-  drummer1.playTrack();
-  drummer1.playTrack();
-  drummer2.playTrack();
-  drummer2.playTrack();
-  drummer3.playTrack();
-  drummer3.playTrack();
-  drummer4.playTrack();
-  drummer4.playTrack();
-  drummer5.playTrack();
-  drummer5.playTrack();
-  drummer6.playTrack();
-  drummer6.playTrack();
-  drummer7.playTrack();
-  drummer7.playTrack();
-  drummer8.playTrack();
-  drummer8.playTrack();
-  $('#tempoDisplay').text(function(){
-    return drummer1.bpm;
-  });
+  playAllTracksTwice();
+  updateBPMDisplay();
 });
 
 $('#decreaseTempo1').click(function(){
@@ -37,25 +45,8 @@ $('#decreaseTempo1').click(function(){
   drummer6.decreaseTempo(1);
   drummer7.decreaseTempo(1);
   drummer8.decreaseTempo(1);
-  drummer1.playTrack();
-  drummer1.playTrack();
-  drummer2.playTrack();
-  drummer2.playTrack();
-  drummer3.playTrack();
-  drummer3.playTrack();
-  drummer4.playTrack();
-  drummer4.playTrack();
-  drummer5.playTrack();
-  drummer5.playTrack();
-  drummer6.playTrack();
-  drummer6.playTrack();
-  drummer7.playTrack();
-  drummer7.playTrack();
-  drummer8.playTrack();
-  drummer8.playTrack();
-  $('#tempoDisplay').text(function(){
-    return drummer1.bpm;
-  });
+  playAllTracksTwice();
+  updateBPMDisplay();
 });
 
 $('#increaseTempo1').click(function(){
@@ -67,25 +58,8 @@ $('#increaseTempo1').click(function(){
   drummer6.increaseTempo(1);
   drummer7.increaseTempo(1);
   drummer8.increaseTempo(1);
-  drummer1.playTrack();
-  drummer1.playTrack();
-  drummer2.playTrack();
-  drummer2.playTrack();
-  drummer3.playTrack();
-  drummer3.playTrack();
-  drummer4.playTrack();
-  drummer4.playTrack();
-  drummer5.playTrack();
-  drummer5.playTrack();
-  drummer6.playTrack();
-  drummer6.playTrack();
-  drummer7.playTrack();
-  drummer7.playTrack();
-  drummer8.playTrack();
-  drummer8.playTrack();
-  $('#tempoDisplay').text(function(){
-    return drummer1.bpm;
-  });
+  playAllTracksTwice();
+  updateBPMDisplay();
 });
 
 $('#increaseTempo10').click(function(){
@@ -97,23 +71,6 @@ $('#increaseTempo10').click(function(){
   drummer6.increaseTempo(10);
   drummer7.increaseTempo(10);
   drummer8.increaseTempo(10);
-  drummer1.playTrack();
-  drummer1.playTrack();
-  drummer2.playTrack();
-  drummer2.playTrack();
-  drummer3.playTrack();
-  drummer3.playTrack();
-  drummer4.playTrack();
-  drummer4.playTrack();
-  drummer5.playTrack();
-  drummer5.playTrack();
-  drummer6.playTrack();
-  drummer6.playTrack();
-  drummer7.playTrack();
-  drummer7.playTrack();
-  drummer8.playTrack();
-  drummer8.playTrack();
-  $('#tempoDisplay').text(function(){
-    return drummer1.bpm;
-  });
+  playAllTracksTwice();
+  updateBPMDisplay();
 });
