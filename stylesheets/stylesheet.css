@@ -12,6 +12,12 @@ table, th, td {
   height: 30px;
 }
 
+.playButton {
+  font-size: 6px;
+  width: 30px;
+  height: 30px;
+}
+
 .d1-btn.active {
   background-color: rgb(60, 152, 158) !important;
 }
