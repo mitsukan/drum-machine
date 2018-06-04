@@ -48,7 +48,7 @@ function footerFlash(arg){
     $("#f1").addClass("badge-secondary");
     $("#f16").removeClass("badge-secondary");
   }
-  console.log(arg)
+  // console.log(arg)
 }
 
 function headerFlash(arg){
@@ -65,5 +65,5 @@ function headerFlash(arg){
     $("#h4").removeClass("badge-secondary");
     $("#h1").addClass("badge-secondary");
   }
-  console.log(arg)
+  // console.log(arg)
 }
