@@ -1,4 +1,5 @@
 function Sequencer(soundObject) {
+  this.bpm = 120;
   this.sound = soundObject;
   this.tempoInMS = 125;
   this.noteArray = [
@@ -75,4 +76,22 @@ Sequencer.prototype.muteTrack = function(muteState){
   } else {
     this.sound.mute(false);
   }
+};
+
+Sequencer.prototype.convertBpmToMs = function(bpm) {
+  var rawMs = (60000 / bpm) / 4;
+  var roundedMs = Math.round(rawMs * 10) / 10;
+  return roundedMs;
+};
+
+Sequencer.prototype.increaseTempo = function(bpm) {
+  this.bpm += bpm;
+  this.tempoInMS = this.convertBpmToMs(this.bpm);
+  return this.bpm;
+};
+
+Sequencer.prototype.decreaseTempo = function(bpm) {
+  this.bpm -= bpm;
+  this.tempoInMS = this.convertBpmToMs(this.bpm);
+  return this.bpm;
 };

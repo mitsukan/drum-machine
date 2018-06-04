@@ -67,3 +67,7 @@ typings/
 .serverless
 
 cypress
+
+.DS_Store
+
+src/.DS_Store
