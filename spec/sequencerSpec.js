@@ -165,5 +165,46 @@ describe('Sequencer', function(){
     });
   });
 
+  describe('convertBpmToMs', function(){
+    it('should take bpm and return a 1/16 note in ms (120 bpm)', function(){
+      expect(testSequencer.convertBpmToMs(120)).toEqual(125);
+    });
+
+    it('should take bpm and return a 1/16 note in ms (140 bpm)', function(){
+      expect(testSequencer.convertBpmToMs(140)).toEqual(107.1);
+    });
+
+    it('should take bpm and return a 1/16 note in ms (115 bpm)', function(){
+      expect(testSequencer.convertBpmToMs(115)).toEqual(130.4);
+    });
+  });
+
+  describe('increaseTempo', function(){
+    it('should increase bpm by amount passed', function() {
+      var newSequencer = new Sequencer(testSound);
+      newSequencer.increaseTempo(15);
+      expect(newSequencer.bpm).toEqual(135);
+    });
+
+    it('should increase tempoInMS by appropriate amount', function() {
+      var newSequencer = new Sequencer(testSound);
+      newSequencer.increaseTempo(15);
+      expect(newSequencer.tempoInMS).toEqual(111.1);
+    });
+  });
+
+  describe('decreaseTempo', function(){
+    it('should decrease bpm by amount passed', function() {
+      var newSequencer = new Sequencer(testSound);
+      newSequencer.decreaseTempo(10);
+      expect(newSequencer.bpm).toEqual(110);
+    });
+
+    it('should decrease tempoInMS by appropriate amount', function() {
+      var newSequencer = new Sequencer(testSound);
+      newSequencer.decreaseTempo(10);
+      expect(newSequencer.tempoInMS).toEqual(136.4);
+    });
+  });
 
 });
