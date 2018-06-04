@@ -154,6 +154,15 @@ $('#muteClap').click(function(){
 $('#playButton').click(function(){
   testDrummer.playTrack();
   testClapper.playTrack();
+  if (testDrummer.isPlaying) {
+    $('#playButton').text('Pause');
+  } else {
+    $('#playButton').text('Play');
+  }
+});
+
+$('#testElement').click(function(){
+  $('#testElement').addClass('fadeOut');
 });
 
 $('#stopButton').click(function(){

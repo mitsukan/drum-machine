@@ -1,0 +1,14 @@
+.fadeOut {
+  animation-name: fadeOut;
+  -webkit-animation-name: fadeOut;
+
+  animation-duration: 0.4s;
+
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: 1;
+
+}
+@keyframes fadeOut {
+    0%     {background-color:red;}
+    100.0%  {background-color:#0070FF;}
+}
