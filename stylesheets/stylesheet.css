@@ -1,7 +1,61 @@
 table, th, td {
   padding: 5px;
   text-align: center;
+}
 
+.container {
+    min-width:722px;
+    width: auto !important;
+    width:800px;
+}
+
+/* body{
+  background: linear-gradient(27deg, #151515 5px, transparent 5px) 0 5px,
+  linear-gradient(207deg, #151515 5px, transparent 5px) 10px 0px,
+  linear-gradient(27deg, #222 5px, transparent 5px) 0px 10px,
+  linear-gradient(207deg, #222 5px, transparent 5px) 10px 5px,
+  linear-gradient(90deg, #1b1b1b 10px, transparent 10px),
+  linear-gradient(#1d1d1d 25%, #1a1a1a 25%, #1a1a1a 50%, transparent 50%, transparent 75%, #242424 75%, #242424);
+  background-color: #131313;
+  background-size: 20px 20px;
+} */
+
+
+
+
+/* drum machine*/
+
+.controller{
+  float:left;
+  margin: 5% auto auto 5%;
+}
+
+#playButton{
+  width: 50px;
+  font-size: 12px;
+}
+
+#stopButton{
+  width: 50px;
+  font-size: 12px;
+}
+
+table{
+  float: right;
+  margin-right: 10%;
+}
+
+#tempo{
+  width: 50px;
+}
+
+ul {
+  list-style-type: none;
+
+}
+
+li {
+  display: inline;
 }
 
 /* buttons color change onclick */
@@ -110,11 +164,12 @@ label {
 
 .box {
     align-self: flex-end;
-    background-color: white;
+    background-color: transparent;
     height: 100px;
     margin: 0 auto 0 auto;
     transform-origin: bottom;
     width: 100px;
+    display:inline-block;
 }
 
 .bounce-7 {
@@ -132,4 +187,93 @@ label {
     57%  { transform: scale(1,1)      translateY(-7px); }
     64%  { transform: scale(1,1)      translateY(0); }
     100% { transform: scale(1,1)      translateY(0); }
+}
+
+/* buttons animation */
+
+.badge-secondary {
+  color:rgb(255, 255, 255);
+  background-color: rgba(132, 142, 150, 0.72);
+}
+
+.badge-light {
+  color:rgb(85, 85, 91);
+}
+
+th {
+  font-size: 18px;
+}
+
+/* animals display */
+
+.overlay{
+  background-color: rgb(51, 15, 117);
+  display: block;
+  padding: 24% 5% 5% 5%;
+}
+
+.animals{
+  text-align: center;
+}
+
+img {
+  width: 100%;
+  height: 100%;
+}
+
+@media only screen and (max-width: 1040px) {
+    .box{
+      width: 85px;
+      height: 85px;
+      margin-left: 15px;
+    }
+}
+
+
+@media only screen and (max-width: 991px) {
+    .box{
+      width: 70px;
+      height: 70px;
+      margin-left: 3px;
+    }
+
+    table{
+      margin-right: 0;
+    }
+
+    .controller{
+      float:left;
+      margin: 1% auto auto 3%;
+    }
+
+    .overlay{
+      background-color: rgb(51, 15, 117);
+      display: block;
+      padding: 30% 5% 5% 5%;
+    }
+
+}
+
+@media only screen and (max-width: 975px) {
+    .box{
+      width: 62px;
+      height: 62px;
+      margin-left: 8px;
+    }
+}
+
+@media only screen and (max-width: 950px) {
+    .box{
+      width: 55px;
+      height: 55px;
+      margin-left: 15px;
+    }
+}
+
+@media only screen and (max-width: 780px) {
+    .box{
+      width: 50px;
+      height: 50px;
+      margin-left: 15px;
+    }
 }
