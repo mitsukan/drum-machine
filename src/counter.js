@@ -20,9 +20,9 @@ Counter.prototype.playTrack = function(){
     this.isPlaying = true;
     this.updatePlayHead();
     this.tempoInterval = setInterval(function(){
-      console.log(this.playHead)
-      footerFlash(this.playHead)
-      headerFlash(this.playHead)
+      console.log(this.playHead);
+      footerFlash(this.playHead);
+      headerFlash(this.playHead);
       this.updatePlayHead();
     }.bind(this), this.tempoInMS);
   }
