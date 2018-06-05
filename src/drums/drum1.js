@@ -1,5 +1,3 @@
-$(window).on('load', function () {
-
   var drum1 = new Howl({
     src: ['audio/kick.mp3']
   });
@@ -96,13 +94,3 @@ $(window).on('load', function () {
     drummer1.toggleNoteState(15);
     drummer1.sound.play();
   });
-
-  $('#playButton').click(function(){
-    drummer1.playTrack();
-  });
-
-  $('#stopButton').click(function(){
-    drummer1.stopTrack();
-  });
-
-});

@@ -1,5 +1,3 @@
-$(window).on('load', function () {
-
   var drum2 = new Howl({
     src: ['audio/clap.mp3']
   });
@@ -88,13 +86,3 @@ $(window).on('load', function () {
     drummer2.toggleNoteState(15);
     drummer2.sound.play();
   });
-
-  $('#playButton').click(function(){
-    drummer2.playTrack();
-  });
-
-  $('#stopButton').click(function(){
-    drummer2.stopTrack();
-  });
-
-});
