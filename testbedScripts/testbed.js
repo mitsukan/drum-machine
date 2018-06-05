@@ -2,175 +2,259 @@
 var testDrum = new Howl({
   src: ['audio/kick.mp3']
 });
-var testDrummer = new Sequencer(testDrum);
+var drummer1 = new Sequencer(testDrum);
 
-$('#1-1').click(function(){
-  testDrummer.toggleNoteState(0);
+$('#kick-1').click(function(){
+  drummer1.toggleNoteState(0);
 });
 
-$('#1-2').click(function(){
-  testDrummer.toggleNoteState(1);
+$('#kick-2').click(function(){
+  drummer1.toggleNoteState(1);
 });
 
-$('#1-3').click(function(){
-  testDrummer.toggleNoteState(2);
+$('#kick-3').click(function(){
+  drummer1.toggleNoteState(2);
 });
 
-$('#1-4').click(function(){
-  testDrummer.toggleNoteState(3);
+$('#kick-4').click(function(){
+  drummer1.toggleNoteState(3);
 });
 
-$('#2-1').click(function(){
-  testDrummer.toggleNoteState(4);
+$('#kick-5').click(function(){
+  drummer1.toggleNoteState(4);
 });
 
-$('#2-2').click(function(){
-  testDrummer.toggleNoteState(5);
+$('#kick-6').click(function(){
+  drummer1.toggleNoteState(5);
 });
 
-$('#2-3').click(function(){
-  testDrummer.toggleNoteState(6);
+$('#kick-7').click(function(){
+  drummer1.toggleNoteState(6);
 });
 
-$('#2-4').click(function(){
-  testDrummer.toggleNoteState(7);
+$('#kick-8').click(function(){
+  drummer1.toggleNoteState(7);
 });
 
-$('#3-1').click(function(){
-  testDrummer.toggleNoteState(8);
+$('#kick-9').click(function(){
+  drummer1.toggleNoteState(8);
 });
 
-$('#3-2').click(function(){
-  testDrummer.toggleNoteState(9);
+$('#kick-10').click(function(){
+  drummer1.toggleNoteState(9);
 });
 
-$('#3-3').click(function(){
-  testDrummer.toggleNoteState(10);
+$('#kick-11').click(function(){
+  drummer1.toggleNoteState(10);
 });
 
-$('#3-4').click(function(){
-  testDrummer.toggleNoteState(11);
+$('#kick-12').click(function(){
+  drummer1.toggleNoteState(11);
 });
 
-$('#4-1').click(function(){
-  testDrummer.toggleNoteState(12);
+$('#kick-13').click(function(){
+  drummer1.toggleNoteState(12);
 });
 
-$('#4-2').click(function(){
-  testDrummer.toggleNoteState(13);
+$('#kick-14').click(function(){
+  drummer1.toggleNoteState(13);
 });
 
-$('#4-3').click(function(){
-  testDrummer.toggleNoteState(14);
+$('#kick-15').click(function(){
+  drummer1.toggleNoteState(14);
 });
 
-$('#4-4').click(function(){
-  testDrummer.toggleNoteState(15);
+$('#kick-16').click(function(){
+  drummer1.toggleNoteState(15);
 });
 
 /// CLAP
 
 var testClap = new Howl({
-  src: ['audio/clap.mp3']
+  src: ['audio/clap-new.mp3']
 });
-var testClapper = new Sequencer(testClap);
+var drummer2 = new Sequencer(testClap);
 
 $('#clap-1').click(function(){
-  testClapper.toggleNoteState(0);
+  drummer2.toggleNoteState(0);
 });
 
 $('#clap-2').click(function(){
-  testClapper.toggleNoteState(1);
+  drummer2.toggleNoteState(1);
 });
 
 $('#clap-3').click(function(){
-  testClapper.toggleNoteState(2);
+  drummer2.toggleNoteState(2);
 });
 
 $('#clap-4').click(function(){
-  testClapper.toggleNoteState(3);
+  drummer2.toggleNoteState(3);
 });
 
 $('#clap-5').click(function(){
-  testClapper.toggleNoteState(4);
+  drummer2.toggleNoteState(4);
 });
 
 $('#clap-6').click(function(){
-  testClapper.toggleNoteState(5);
+  drummer2.toggleNoteState(5);
 });
 
 $('#clap-7').click(function(){
-  testClapper.toggleNoteState(6);
+  drummer2.toggleNoteState(6);
 });
 
 $('#clap-8').click(function(){
-  testClapper.toggleNoteState(7);
+  drummer2.toggleNoteState(7);
 });
 
 $('#clap-9').click(function(){
-  testClapper.toggleNoteState(8);
+  drummer2.toggleNoteState(8);
 });
 
 $('#clap-10').click(function(){
-  testClapper.toggleNoteState(9);
+  drummer2.toggleNoteState(9);
 });
 
 $('#clap-11').click(function(){
-  testClapper.toggleNoteState(10);
+  drummer2.toggleNoteState(10);
 });
 
 $('#clap-12').click(function(){
-  testClapper.toggleNoteState(11);
+  drummer2.toggleNoteState(11);
 });
 
 $('#clap-13').click(function(){
-  testClapper.toggleNoteState(12);
+  drummer2.toggleNoteState(12);
 });
 
 $('#clap-14').click(function(){
-  testClapper.toggleNoteState(13);
+  drummer2.toggleNoteState(13);
 });
 
 $('#clap-15').click(function(){
-  testClapper.toggleNoteState(14);
+  drummer2.toggleNoteState(14);
 });
 
 $('#clap-16').click(function(){
-  testClapper.toggleNoteState(15);
+  drummer2.toggleNoteState(15);
+});
+
+/// SNARE
+
+var testSnare = new Howl({
+  src: ['audio/snare.mp3']
+});
+var drummer3 = new Sequencer(testSnare);
+
+$('#snare-1').click(function(){
+  drummer3.toggleNoteState(0);
+});
+
+$('#snare-2').click(function(){
+  drummer3.toggleNoteState(1);
+});
+
+$('#snare-3').click(function(){
+  drummer3.toggleNoteState(2);
+});
+
+$('#snare-4').click(function(){
+  drummer3.toggleNoteState(3);
+});
+
+$('#snare-5').click(function(){
+  drummer3.toggleNoteState(4);
+});
+
+$('#snare-6').click(function(){
+  drummer3.toggleNoteState(5);
+});
+
+$('#snare-7').click(function(){
+  drummer3.toggleNoteState(6);
+});
+
+$('#snare-8').click(function(){
+  drummer3.toggleNoteState(7);
+});
+
+$('#snare-9').click(function(){
+  drummer3.toggleNoteState(8);
+});
+
+$('#snare-10').click(function(){
+  drummer3.toggleNoteState(9);
+});
+
+$('#snare-11').click(function(){
+  drummer3.toggleNoteState(10);
+});
+
+$('#snare-12').click(function(){
+  drummer3.toggleNoteState(11);
+});
+
+$('#snare-13').click(function(){
+  drummer3.toggleNoteState(12);
+});
+
+$('#snare-14').click(function(){
+  drummer3.toggleNoteState(13);
+});
+
+$('#snare-15').click(function(){
+  drummer3.toggleNoteState(14);
+});
+
+$('#snare-16').click(function(){
+  drummer3.toggleNoteState(15);
 });
 
 /// MUTE BUTTONS
 
 $('#muteKick').click(function(){
-  testDrummer.muteTrack();
+  drummer1.muteTrack();
 });
 
 $('#muteClap').click(function(){
-  testClapper.muteTrack();
+  drummer2.muteTrack();
+});
+
+$('#muteSnare').click(function(){
+  drummer3.muteTrack();
+});
+
+$('#muteClosedHat').click(function(){
+  drummer4.muteTrack();
+});
+
+$('#muteOpenHat').click(function(){
+  drummer5.muteTrack();
+});
+
+$('#muteCowbell').click(function(){
+  drummer6.muteTrack();
 });
 
 /// PLAY STOP BUTTONS
 
 $('#playButton').click(function(){
-  testDrummer.playTrack();
-  testClapper.playTrack();
-  if (testDrummer.isPlaying) {
+  drummer1.playTrack();
+  drummer2.playTrack();
+  drummer3.playTrack();
+  if (drummer1.isPlaying) {
     $('#playButton').text('Pause');
   } else {
     $('#playButton').text('Play');
   }
 });
 
-$('#testElement').click(function(){
-  $('#testElement').addClass('fadeOut');
-});
-
 $('#stopButton').click(function(){
-  testDrummer.stopTrack();
+  drummer1.stopTrack();
   console.log('stopped kick');
 });
 
 $('#stopButton').click(function(){
-  testClapper.stopTrack();
+  drummer2.stopTrack();
   console.log('stopped clap');
 });
