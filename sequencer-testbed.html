@@ -11,79 +11,183 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js" integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ" crossorigin="anonymous"></script>
   <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"></script>
-  <link href="testbedScripts/test-style.css" rel="stylesheet">
+  <link href="stylesheets/stylesheet.css" rel="stylesheet">
 
 </head>
 
 <body style="padding: 25px;">
-  <div id="tempoSection">
-    <button class="btn btn-secondary" id="decreaseTempo10">-10</button><button class="btn btn-secondary" id="decreaseTempo1">-1</button>
-    <strong><span id="tempoDisplay">120</span></strong>
-        <button class="btn btn-success" id="increaseTempo1">+1</button><button class="btn btn-success" id="increaseTempo10">-10</button>
-  </div>
-  <div id="drum-button-row">
-    <button type="button" class="btn btn-primary" data-toggle="button" id="1-1">1-1</button>
-    <button type="button" class="btn btn-primary" data-toggle="button" id="1-2">1-2</button>
-    <button type="button" class="btn btn-primary" data-toggle="button" id="1-3">1-3</button>
-    <button type="button" class="btn btn-primary" data-toggle="button" id="1-4">1-4</button>
-    <button type="button" class="btn btn-primary" data-toggle="button" id="2-1">2-1</button>
-    <button type="button" class="btn btn-primary" data-toggle="button" id="2-2">2-2</button>
-    <button type="button" class="btn btn-primary" data-toggle="button" id="2-3">2-3</button>
-    <button type="button" class="btn btn-primary" data-toggle="button" id="2-4">2-4</button>
-    <button type="button" class="btn btn-primary" data-toggle="button" id="3-1">3-1</button>
-    <button type="button" class="btn btn-primary" data-toggle="button" id="3-2">3-2</button>
-    <button type="button" class="btn btn-primary" data-toggle="button" id="3-3">3-3</button>
-    <button type="button" class="btn btn-primary" data-toggle="button" id="3-4">3-4</button>
-    <button type="button" class="btn btn-primary" data-toggle="button" id="4-1">4-1</button>
-    <button type="button" class="btn btn-primary" data-toggle="button" id="4-2">4-2</button>
-    <button type="button" class="btn btn-primary" data-toggle="button" id="4-3">4-3</button>
-    <button type="button" class="btn btn-primary" data-toggle="button" id="4-4">4-4</button>
-    <button type="button" class="btn btn-danger" data-toggle="button" id="muteKick">MUTE</button>
-  </div>
+  <table>
+    <tr id="tempoSection">
+      <th><button class="btn btn-secondary" id="decreaseTempo10">-10</button></th>
+      <th><button class="btn btn-secondary" id="decreaseTempo1">-1</button></th>
+      <th><strong><span id="tempoDisplay">120</span></strong></th>
+      <th><button class="btn btn-success" id="increaseTempo1">+1</button></th>
+      <th><button class="btn btn-success" id="increaseTempo10">+10</button></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th><button class="btn btn-primary" id="playButton">Play</button></th>
+      <th><button id="stopButton" class="btn btn-secondary">STOP</button></th>
+    </tr>
+  </table>
+  <table>
+    <tr>
+      <div id="drum-button-row">
+        <th><button type="button" class="btn btn-outline-secondary d1-btn" data-toggle="button" id="kick-1">1-1</button></th>
+        <th><button type="button" class="btn btn-outline-secondary d1-btn" data-toggle="button" id="kick-2">1-2</button></th>
+        <th><button type="button" class="btn btn-outline-secondary d1-btn" data-toggle="button" id="kick-3">1-3</button></th>
+        <th><button type="button" class="btn btn-outline-secondary d1-btn" data-toggle="button" id="kick-4">1-4</button></th>
+        <th><button type="button" class="btn btn-outline-secondary d1-btn" data-toggle="button" id="kick-5">2-1</button></th>
+        <th><button type="button" class="btn btn-outline-secondary d1-btn" data-toggle="button" id="kick-6">2-2</button></th>
+        <th><button type="button" class="btn btn-outline-secondary d1-btn" data-toggle="button" id="kick-7">2-3</button></th>
+        <th><button type="button" class="btn btn-outline-secondary d1-btn" data-toggle="button" id="kick-8">2-4</button></th>
+        <th><button type="button" class="btn btn-outline-secondary d1-btn" data-toggle="button" id="kick-9">3-1</button></th>
+        <th><button type="button" class="btn btn-outline-secondary d1-btn" data-toggle="button" id="kick-10">3-2</button></th>
+        <th><button type="button" class="btn btn-outline-secondary d1-btn" data-toggle="button" id="kick-11">3-3</button></th>
+        <th><button type="button" class="btn btn-outline-secondary d1-btn" data-toggle="button" id="kick-12">3-4</button></th>
+        <th><button type="button" class="btn btn-outline-secondary d1-btn" data-toggle="button" id="kick-13">4-1</button></th>
+        <th><button type="button" class="btn btn-outline-secondary d1-btn" data-toggle="button" id="kick-14">4-2</button></th>
+        <th><button type="button" class="btn btn-outline-secondary d1-btn" data-toggle="button" id="kick-15">4-3</button></th>
+        <th><button type="button" class="btn btn-outline-secondary d1-btn" data-toggle="button" id="kick-16">4-4</button></th>
+        <th><button type="button" class="btn btn-danger" data-toggle="button" id="muteKick">MUTE</button></th>
+      </div>
+    </tr>
+    <tr>
+      <div id="clap-button-row">
+        <th><button type="button" class="btn btn-outline-secondary d2-btn" data-toggle="button" id="clap-1">1-1</button></th>
+        <th><button type="button" class="btn btn-outline-secondary d2-btn" data-toggle="button" id="clap-2">1-2</button></th>
+        <th><button type="button" class="btn btn-outline-secondary d2-btn" data-toggle="button" id="clap-3">1-3</button></th>
+        <th><button type="button" class="btn btn-outline-secondary d2-btn" data-toggle="button" id="clap-4">1-4</button></th>
+        <th><button type="button" class="btn btn-outline-secondary d2-btn" data-toggle="button" id="clap-5">2-1</button></th>
+        <th><button type="button" class="btn btn-outline-secondary d2-btn" data-toggle="button" id="clap-6">2-2</button></th>
+        <th><button type="button" class="btn btn-outline-secondary d2-btn" data-toggle="button" id="clap-7">2-3</button></th>
+        <th><button type="button" class="btn btn-outline-secondary d2-btn" data-toggle="button" id="clap-8">2-4</button></th>
+        <th><button type="button" class="btn btn-outline-secondary d2-btn" data-toggle="button" id="clap-9">3-1</button></th>
+        <th><button type="button" class="btn btn-outline-secondary d2-btn" data-toggle="button" id="clap-10">3-2</button></th>
+        <th><button type="button" class="btn btn-outline-secondary d2-btn" data-toggle="button" id="clap-11">3-3</button></th>
+        <th><button type="button" class="btn btn-outline-secondary d2-btn" data-toggle="button" id="clap-12">3-4</button></th>
+        <th><button type="button" class="btn btn-outline-secondary d2-btn" data-toggle="button" id="clap-13">4-1</button></th>
+        <th><button type="button" class="btn btn-outline-secondary d2-btn" data-toggle="button" id="clap-14">4-2</button></th>
+        <th><button type="button" class="btn btn-outline-secondary d2-btn" data-toggle="button" id="clap-15">4-3</button></th>
+        <th><button type="button" class="btn btn-outline-secondary d2-btn" data-toggle="button" id="clap-16">4-4</button></th>
+        <th><button type="button" class="btn btn-danger" data-toggle="button" id="muteClap">MUTE</button></th>
+      </div>
+    </tr>
 
-  <div id="clap-button-row">
-    <button type="button" class="btn btn-warning" data-toggle="button" id="clap-1">1-1</button>
-    <button type="button" class="btn btn-warning" data-toggle="button" id="clap-2">1-2</button>
-    <button type="button" class="btn btn-warning" data-toggle="button" id="clap-3">1-3</button>
-    <button type="button" class="btn btn-warning" data-toggle="button" id="clap-4">1-4</button>
-    <button type="button" class="btn btn-warning" data-toggle="button" id="clap-5">2-1</button>
-    <button type="button" class="btn btn-warning" data-toggle="button" id="clap-6">2-2</button>
-    <button type="button" class="btn btn-warning" data-toggle="button" id="clap-7">2-3</button>
-    <button type="button" class="btn btn-warning" data-toggle="button" id="clap-8">2-4</button>
-    <button type="button" class="btn btn-warning" data-toggle="button" id="clap-9">3-1</button>
-    <button type="button" class="btn btn-warning" data-toggle="button" id="clap-10">3-2</button>
-    <button type="button" class="btn btn-warning" data-toggle="button" id="clap-11">3-3</button>
-    <button type="button" class="btn btn-warning" data-toggle="button" id="clap-12">3-4</button>
-    <button type="button" class="btn btn-warning" data-toggle="button" id="clap-13">4-1</button>
-    <button type="button" class="btn btn-warning" data-toggle="button" id="clap-14">4-2</button>
-    <button type="button" class="btn btn-warning" data-toggle="button" id="clap-15">4-3</button>
-    <button type="button" class="btn btn-warning" data-toggle="button" id="clap-16">4-4</button>
-    <button type="button" class="btn btn-danger" data-toggle="button" id="muteClap">MUTE</button>
-  </div>
-  <div>
-    <span id="num-0">1</span>
-		<span id="num-1">2</span>
-		<span id="num-2">3</span>
-		<span id="num-3">4</span>
-		<span id="num-4">5</span>
-		<span id="num-5">6</span>
-		<span id="num-6">7</span>
-		<span id="num-7">8</span>
-		<span id="num-8">9</span>
-		<span id="num-9">10</span>
-		<span id="num-10">11</span>
-		<span id="num-11">12</span>
-		<span id="num-12">13</span>
-		<span id="num-13">14</span>
-		<span id="num-14">15</span>
-		<span id="num-15">16</span>
-  </div>
+    <tr>
+      <div id="snare-button-row">
+        <th><button type="button" class="btn btn-outline-secondary d3-btn" data-toggle="button" id="snare-1">1-1</button></th>
+        <th><button type="button" class="btn btn-outline-secondary d3-btn" data-toggle="button" id="snare-2">1-2</button></th>
+        <th><button type="button" class="btn btn-outline-secondary d3-btn" data-toggle="button" id="snare-3">1-3</button></th>
+        <th><button type="button" class="btn btn-outline-secondary d3-btn" data-toggle="button" id="snare-4">1-4</button></th>
+        <th><button type="button" class="btn btn-outline-secondary d3-btn" data-toggle="button" id="snare-5">2-1</button></th>
+        <th><button type="button" class="btn btn-outline-secondary d3-btn" data-toggle="button" id="snare-6">2-2</button></th>
+        <th><button type="button" class="btn btn-outline-secondary d3-btn" data-toggle="button" id="snare-7">2-3</button></th>
+        <th><button type="button" class="btn btn-outline-secondary d3-btn" data-toggle="button" id="snare-8">2-4</button></th>
+        <th><button type="button" class="btn btn-outline-secondary d3-btn" data-toggle="button" id="snare-9">3-1</button></th>
+        <th><button type="button" class="btn btn-outline-secondary d3-btn" data-toggle="button" id="snare-10">3-2</button></th>
+        <th><button type="button" class="btn btn-outline-secondary d3-btn" data-toggle="button" id="snare-11">3-3</button></th>
+        <th><button type="button" class="btn btn-outline-secondary d3-btn" data-toggle="button" id="snare-12">3-4</button></th>
+        <th><button type="button" class="btn btn-outline-secondary d3-btn" data-toggle="button" id="snare-13">4-1</button></th>
+        <th><button type="button" class="btn btn-outline-secondary d3-btn" data-toggle="button" id="snare-14">4-2</button></th>
+        <th><button type="button" class="btn btn-outline-secondary d3-btn" data-toggle="button" id="snare-15">4-3</button></th>
+        <th><button type="button" class="btn btn-outline-secondary d3-btn" data-toggle="button" id="snare-16">4-4</button></th>
+        <th><button type="button" class="btn btn-danger" data-toggle="button" id="muteSnare">MUTE</button></th>
+      </div>
+    </tr>
+
+    <tr>
+      <div id="closedhat-button-row">
+        <th><button type="button" class="btn btn-outline-secondary d4-btn" data-toggle="button" id="closedhat-1">1-1</button></th>
+        <th><button type="button" class="btn btn-outline-secondary d4-btn" data-toggle="button" id="closedhat-2">1-2</button></th>
+        <th><button type="button" class="btn btn-outline-secondary d4-btn" data-toggle="button" id="closedhat-3">1-3</button></th>
+        <th><button type="button" class="btn btn-outline-secondary d4-btn" data-toggle="button" id="closedhat-4">1-4</button></th>
+        <th><button type="button" class="btn btn-outline-secondary d4-btn" data-toggle="button" id="closedhat-5">2-1</button></th>
+        <th><button type="button" class="btn btn-outline-secondary d4-btn" data-toggle="button" id="closedhat-6">2-2</button></th>
+        <th><button type="button" class="btn btn-outline-secondary d4-btn" data-toggle="button" id="closedhat-7">2-3</button></th>
+        <th><button type="button" class="btn btn-outline-secondary d4-btn" data-toggle="button" id="closedhat-8">2-4</button></th>
+        <th><button type="button" class="btn btn-outline-secondary d4-btn" data-toggle="button" id="closedhat-9">3-1</button></th>
+        <th><button type="button" class="btn btn-outline-secondary d4-btn" data-toggle="button" id="closedhat-10">3-2</button></th>
+        <th><button type="button" class="btn btn-outline-secondary d4-btn" data-toggle="button" id="closedhat-11">3-3</button></th>
+        <th><button type="button" class="btn btn-outline-secondary d4-btn" data-toggle="button" id="closedhat-12">3-4</button></th>
+        <th><button type="button" class="btn btn-outline-secondary d4-btn" data-toggle="button" id="closedhat-13">4-1</button></th>
+        <th><button type="button" class="btn btn-outline-secondary d4-btn" data-toggle="button" id="closedhat-14">4-2</button></th>
+        <th><button type="button" class="btn btn-outline-secondary d4-btn" data-toggle="button" id="closedhat-15">4-3</button></th>
+        <th><button type="button" class="btn btn-outline-secondary d4-btn" data-toggle="button" id="closedhat-16">4-4</button></th>
+        <th><button type="button" class="btn btn-danger" data-toggle="button" id="muteClosedHat">MUTE</button></th>
+      </div>
+    </tr>
+
+    <tr>
+      <div id="openhat-button-row">
+        <th><button type="button" class="btn btn-outline-secondary d5-btn" data-toggle="button" id="openhat-1">1-1</button></th>
+        <th><button type="button" class="btn btn-outline-secondary d5-btn" data-toggle="button" id="openhat-2">1-2</button></th>
+        <th><button type="button" class="btn btn-outline-secondary d5-btn" data-toggle="button" id="openhat-3">1-3</button></th>
+        <th><button type="button" class="btn btn-outline-secondary d5-btn" data-toggle="button" id="openhat-4">1-4</button></th>
+        <th><button type="button" class="btn btn-outline-secondary d5-btn" data-toggle="button" id="openhat-5">2-1</button></th>
+        <th><button type="button" class="btn btn-outline-secondary d5-btn" data-toggle="button" id="openhat-6">2-2</button></th>
+        <th><button type="button" class="btn btn-outline-secondary d5-btn" data-toggle="button" id="openhat-7">2-3</button></th>
+        <th><button type="button" class="btn btn-outline-secondary d5-btn" data-toggle="button" id="openhat-8">2-4</button></th>
+        <th><button type="button" class="btn btn-outline-secondary d5-btn" data-toggle="button" id="openhat-9">3-1</button></th>
+        <th><button type="button" class="btn btn-outline-secondary d5-btn" data-toggle="button" id="openhat-10">3-2</button></th>
+        <th><button type="button" class="btn btn-outline-secondary d5-btn" data-toggle="button" id="openhat-11">3-3</button></th>
+        <th><button type="button" class="btn btn-outline-secondary d5-btn" data-toggle="button" id="openhat-12">3-4</button></th>
+        <th><button type="button" class="btn btn-outline-secondary d5-btn" data-toggle="button" id="openhat-13">4-1</button></th>
+        <th><button type="button" class="btn btn-outline-secondary d5-btn" data-toggle="button" id="openhat-14">4-2</button></th>
+        <th><button type="button" class="btn btn-outline-secondary d5-btn" data-toggle="button" id="openhat-15">4-3</button></th>
+        <th><button type="button" class="btn btn-outline-secondary d5-btn" data-toggle="button" id="openhat-16">4-4</button></th>
+        <th><button type="button" class="btn btn-danger" data-toggle="button" id="muteOpenHat">MUTE</button></th>
+      </div>
+    </tr>
+
+    <tr>
+      <div id="cowbell-button-row">
+        <th><button type="button" class="btn btn-outline-secondary d5-btn" data-toggle="button" id="cowbell-1">1-1</button></th>
+        <th><button type="button" class="btn btn-outline-secondary d5-btn" data-toggle="button" id="cowbell-2">1-2</button></th>
+        <th><button type="button" class="btn btn-outline-secondary d5-btn" data-toggle="button" id="cowbell-3">1-3</button></th>
+        <th><button type="button" class="btn btn-outline-secondary d5-btn" data-toggle="button" id="cowbell-4">1-4</button></th>
+        <th><button type="button" class="btn btn-outline-secondary d5-btn" data-toggle="button" id="cowbell-5">2-1</button></th>
+        <th><button type="button" class="btn btn-outline-secondary d5-btn" data-toggle="button" id="cowbell-6">2-2</button></th>
+        <th><button type="button" class="btn btn-outline-secondary d5-btn" data-toggle="button" id="cowbell-7">2-3</button></th>
+        <th><button type="button" class="btn btn-outline-secondary d5-btn" data-toggle="button" id="cowbell-8">2-4</button></th>
+        <th><button type="button" class="btn btn-outline-secondary d5-btn" data-toggle="button" id="cowbell-9">3-1</button></th>
+        <th><button type="button" class="btn btn-outline-secondary d5-btn" data-toggle="button" id="cowbell-10">3-2</button></th>
+        <th><button type="button" class="btn btn-outline-secondary d5-btn" data-toggle="button" id="cowbell-11">3-3</button></th>
+        <th><button type="button" class="btn btn-outline-secondary d5-btn" data-toggle="button" id="cowbell-12">3-4</button></th>
+        <th><button type="button" class="btn btn-outline-secondary d5-btn" data-toggle="button" id="cowbell-13">4-1</button></th>
+        <th><button type="button" class="btn btn-outline-secondary d5-btn" data-toggle="button" id="cowbell-14">4-2</button></th>
+        <th><button type="button" class="btn btn-outline-secondary d5-btn" data-toggle="button" id="cowbell-15">4-3</button></th>
+        <th><button type="button" class="btn btn-outline-secondary d5-btn" data-toggle="button" id="cowbell-16">4-4</button></th>
+        <th><button type="button" class="btn btn-danger" data-toggle="button" id="muteCowbell">MUTE</button></th>
+      </div>
+    </tr>
+
+    <tr>
+      <th><span id="num-0">1</span></th>
+  		<th><span id="num-1">2</span></th>
+  		<th><span id="num-2">3</span></th>
+  		<th><span id="num-3">4</span></th>
+  		<th><span id="num-4">5</span></th>
+  		<th><span id="num-5">6</span></th>
+  		<th><span id="num-6">7</span></th>
+  		<th><span id="num-7">8</span></th>
+  		<th><span id="num-8">9</span></th>
+  		<th><span id="num-9">10</span></th>
+  		<th><span id="num-10">11</span></th>
+  		<th><span id="num-11">12</span></th>
+  		<th><span id="num-12">13</span></th>
+  		<th><span id="num-13">14</span></th>
+  		<th><span id="num-14">15</span></th>
+  		<th><span id="num-15">16</span></th>
+    </tr>
+    </table>
   <br>
 
-  <button class="btn btn-primary" id="playButton">Play</button><button id="stopButton" class="btn btn-secondary">STOP</button>
 
   <br>
-  <p id="testElement">TEST THIS SHIT PLS</p>
   <script src="testbedScripts/testbed.js"></script>
   <script src="testbedScripts/tempoTest.js"></script>
 

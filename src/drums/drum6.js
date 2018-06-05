@@ -1,5 +1,5 @@
   var drum6 = new Howl({
-    src: ['audio/clap.mp3']
+    src: ['audio/cowbell.mp3']
   });
 
   var drummer6 = new Sequencer(drum6);
