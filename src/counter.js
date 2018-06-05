@@ -1,4 +1,5 @@
 function Counter() {
+  this.bpm = 120;
   this.tempoInMS = 125;
   this.playHead = 0;
   this.isPlaying = false;
@@ -37,4 +38,22 @@ Counter.prototype.stopTrack = function(){
 Counter.prototype.pauseTrack = function(){
   clearInterval(this.tempoInterval);
   this.isPlaying = false;
+};
+
+Counter.prototype.convertBpmToMs = function(bpm) {
+  var rawMs = (60000 / bpm) / 4;
+  var roundedMs = Math.round(rawMs * 10) / 10;
+  return roundedMs;
+};
+
+Counter.prototype.increaseTempo = function(bpm) {
+  this.bpm += bpm;
+  this.tempoInMS = this.convertBpmToMs(this.bpm);
+  return this.bpm;
+};
+
+Counter.prototype.decreaseTempo = function(bpm) {
+  this.bpm -= bpm;
+  this.tempoInMS = this.convertBpmToMs(this.bpm);
+  return this.bpm;
 };
