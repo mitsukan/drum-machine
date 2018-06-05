@@ -1,8 +1,20 @@
   var drum2 = new Howl({
-    src: ['audio/clap-new.mp3']
+    src: ['audio/clap-new-[AudioTrimmer.com].mp3']
   });
 
   var drummer2 = new Sequencer(drum2);
+
+  drum2.on("play", function(){
+    if($("#panda").hasClass("bounce")
+    ){
+      $("#panda").removeClass("bounce")
+    }
+    $("#panda").addClass("bounce");
+  });
+
+  drum2.on("end", function(){
+    $("#panda").removeClass("bounce");
+  });
 
   $("#mute2").click(function(){
     drummer2.muteTrack();

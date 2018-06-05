@@ -4,6 +4,18 @@
 
   var drummer8 = new Sequencer(drum8);
 
+  drum8.on("play", function(){
+    if($("#polarbear").hasClass("bounce")
+    ){
+      $("#polarbear").removeClass("bounce")
+    }
+    $("#polarbear").addClass("bounce");
+  });
+
+  drum8.on("end", function(){
+    $("#polarbear").removeClass("bounce");
+  });
+
   $("#mute8").click(function(){
     drummer8.muteTrack();
   });
