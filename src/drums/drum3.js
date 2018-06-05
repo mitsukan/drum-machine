@@ -4,6 +4,18 @@
 
   var drummer3 = new Sequencer(drum3);
 
+  drum3.on("play", function(){
+    if($("#brownbear").hasClass("bounce")
+    ){
+      $("#brownbear").removeClass("bounce")
+    }
+    $("#brownbear").addClass("bounce");
+  });
+
+  drum3.on("end", function(){
+    $("#brownbear").removeClass("bounce");
+  });
+
   $("#mute3").click(function(){
     drummer3.muteTrack();
   });
