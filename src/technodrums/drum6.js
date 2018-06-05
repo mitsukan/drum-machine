@@ -4,22 +4,6 @@
 
   var drummer6 = new Sequencer(drum6);
 
-  drum6.on("play", function(){
-    if($("#pig").hasClass("bounce")
-    ){
-      $("#pig").removeClass("bounce")
-    }
-    $("#pig").addClass("bounce");
-  });
-
-  drum6.on("end", function(){
-    $("#pig").removeClass("bounce");
-  });
-
-  $("#mute6").click(function(){
-    drummer6.muteTrack();
-  });
-
   $("#d6-1").click(function(){
     drummer6.toggleNoteState(0);
     drummer6.sound.play();
