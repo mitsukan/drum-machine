@@ -1,7 +1,7 @@
 $(window).on('load', function () {
 
   var drum2 = new Howl({
-    src: ['audio/clap.mp3']
+    src: ['https://s3.eu-west-2.amazonaws.com/vytis-dm/clap.mp3']
   });
 
   var drummer2 = new Sequencer(drum2);

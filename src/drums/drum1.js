@@ -1,7 +1,7 @@
 $(window).on('load', function () {
 
   var drum1 = new Howl({
-    src: ['https://s3.eu-west-2.amazonaws.com/drum-machine-beat-makers/kick.mp3']
+    src: ['https://s3.eu-west-2.amazonaws.com/vytis-dm/kick.mp3']
   });
 
   var drummer1 = new Sequencer(drum1);
