@@ -9,6 +9,55 @@ table, th, td {
     width:800px;
 }
 
+/* body{
+  background: linear-gradient(27deg, #151515 5px, transparent 5px) 0 5px,
+  linear-gradient(207deg, #151515 5px, transparent 5px) 10px 0px,
+  linear-gradient(27deg, #222 5px, transparent 5px) 0px 10px,
+  linear-gradient(207deg, #222 5px, transparent 5px) 10px 5px,
+  linear-gradient(90deg, #1b1b1b 10px, transparent 10px),
+  linear-gradient(#1d1d1d 25%, #1a1a1a 25%, #1a1a1a 50%, transparent 50%, transparent 75%, #242424 75%, #242424);
+  background-color: #131313;
+  background-size: 20px 20px;
+} */
+
+
+
+
+/* drum machine*/
+
+.controller{
+  float:left;
+  margin: 5% auto auto 5%;
+}
+
+#playButton{
+  width: 50px;
+  font-size: 12px;
+}
+
+#stopButton{
+  width: 50px;
+  font-size: 12px;
+}
+
+table{
+  float: right;
+  margin-right: 10%;
+}
+
+#tempo{
+  width: 50px;
+}
+
+ul {
+  list-style-type: none;
+
+}
+
+li {
+  display: inline;
+}
+
 /* buttons color change onclick */
 
 .btn {
@@ -115,9 +164,9 @@ label {
 
 .box {
     align-self: flex-end;
-    background-color: white;
+    background-color: transparent;
     height: 100px;
-    margin: 0 auto 0 3px;
+    margin: 0 auto 0 auto;
     transform-origin: bottom;
     width: 100px;
     display:inline-block;
@@ -160,7 +209,7 @@ th {
 .overlay{
   background-color: rgb(51, 15, 117);
   display: block;
-  padding: 25% 5% 5% 5%;
+  padding: 24% 5% 5% 5%;
 }
 
 .animals{
@@ -187,6 +236,22 @@ img {
       height: 70px;
       margin-left: 3px;
     }
+
+    table{
+      margin-right: 0;
+    }
+
+    .controller{
+      float:left;
+      margin: 1% auto auto 3%;
+    }
+
+    .overlay{
+      background-color: rgb(51, 15, 117);
+      display: block;
+      padding: 30% 5% 5% 5%;
+    }
+
 }
 
 @media only screen and (max-width: 975px) {
