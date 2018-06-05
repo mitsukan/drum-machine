@@ -15,6 +15,8 @@ var playAllTracksTwice = function(){
   drummer7.playTrack();
   drummer8.playTrack();
   drummer8.playTrack();
+  counter.playTrack();
+  counter.playTrack();
 };
 
 var updateBPMDisplay = function() {
@@ -24,6 +26,7 @@ var updateBPMDisplay = function() {
 };
 
 $('#decreaseTempo10').click(function(){
+  resetFlash();
   drummer1.decreaseTempo(10);
   drummer2.decreaseTempo(10);
   drummer3.decreaseTempo(10);
@@ -32,11 +35,13 @@ $('#decreaseTempo10').click(function(){
   drummer6.decreaseTempo(10);
   drummer7.decreaseTempo(10);
   drummer8.decreaseTempo(10);
+  counter.decreaseTempo(10);
   playAllTracksTwice();
   updateBPMDisplay();
 });
 
 $('#decreaseTempo1').click(function(){
+  resetFlash();
   drummer1.decreaseTempo(1);
   drummer2.decreaseTempo(1);
   drummer3.decreaseTempo(1);
@@ -45,11 +50,13 @@ $('#decreaseTempo1').click(function(){
   drummer6.decreaseTempo(1);
   drummer7.decreaseTempo(1);
   drummer8.decreaseTempo(1);
+  counter.decreaseTempo(1);
   playAllTracksTwice();
   updateBPMDisplay();
 });
 
 $('#increaseTempo1').click(function(){
+  resetFlash();
   drummer1.increaseTempo(1);
   drummer2.increaseTempo(1);
   drummer3.increaseTempo(1);
@@ -58,11 +65,13 @@ $('#increaseTempo1').click(function(){
   drummer6.increaseTempo(1);
   drummer7.increaseTempo(1);
   drummer8.increaseTempo(1);
+  counter.increaseTempo(1);
   playAllTracksTwice();
   updateBPMDisplay();
 });
 
 $('#increaseTempo10').click(function(){
+  resetFlash();
   drummer1.increaseTempo(10);
   drummer2.increaseTempo(10);
   drummer3.increaseTempo(10);
@@ -71,6 +80,7 @@ $('#increaseTempo10').click(function(){
   drummer6.increaseTempo(10);
   drummer7.increaseTempo(10);
   drummer8.increaseTempo(10);
+  counter.increaseTempo(10);
   playAllTracksTwice();
   updateBPMDisplay();
 });

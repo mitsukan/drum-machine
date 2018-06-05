@@ -67,3 +67,31 @@ function headerFlash(arg){
   }
   // console.log(arg)
 }
+
+function resetFlash(){
+  $("#h1").removeClass("badge-secondary");
+  $("#h2").removeClass("badge-secondary");
+  $("#h3").removeClass("badge-secondary");
+  $("#h4").removeClass("badge-secondary");
+  $("#f1").removeClass("badge-secondary");
+  $("#f2").removeClass("badge-secondary");
+  $("#f3").removeClass("badge-secondary");
+  $("#f4").removeClass("badge-secondary");
+  $("#f5").removeClass("badge-secondary");
+  $("#f6").removeClass("badge-secondary");
+  $("#f7").removeClass("badge-secondary");
+  $("#f8").removeClass("badge-secondary");
+  $("#f9").removeClass("badge-secondary");
+  $("#f10").removeClass("badge-secondary");
+  $("#f11").removeClass("badge-secondary");
+  $("#f12").removeClass("badge-secondary");
+  $("#f13").removeClass("badge-secondary");
+  $("#f14").removeClass("badge-secondary");
+  $("#f15").removeClass("badge-secondary");
+  $("#f16").removeClass("badge-secondary");
+}
+
+function resetH1F1(){
+  $("#h1").addClass("badge-secondary");
+  $("#f1").addClass("badge-secondary");
+}
