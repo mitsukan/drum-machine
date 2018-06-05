@@ -25,37 +25,64 @@ table, th, td {
 
 /* drum machine*/
 
-.controller{
-  float:left;
-  margin: 5% auto auto 5%;
+ul{
+  margin: 1% auto 1% auto;
+  list-style-type: none;
+}
+
+li {
+  display: inline;
 }
 
 #playButton{
   width: 50px;
   font-size: 12px;
+  margin-left: 10%;
+  margin-right: 2%;
 }
 
 #stopButton{
   width: 50px;
   font-size: 12px;
+  margin-right: 2%;
+}
+
+.btn-group{
+  float: right;
+  margin-right: 10%;
+}
+
+#tempoDisplay{
+  width: 70px;
+  padding-top: 5%;
+  border-radius: 1%;
+}
+
+#increaseTempo1{
+  font-size: 12px;
+  background-color: rgba(108, 108, 108, 0.93);
+}
+
+#increaseTempo10{
+  width:45px;
+  font-size: 12px;
+  background-color: rgba(108, 108, 108, 0.84);
+}
+
+#decreaseTempo1{
+  background-color: rgba(108, 108, 108, 0.93);
+  font-size: 12px;
+}
+
+#decreaseTempo10{
+  width:45px;
+  font-size: 12px;
+  background-color: rgba(108, 108, 108, 0.84);
 }
 
 table{
   float: right;
   margin-right: 10%;
-}
-
-#tempo{
-  width: 50px;
-}
-
-ul {
-  list-style-type: none;
-
-}
-
-li {
-  display: inline;
 }
 
 /* buttons color change onclick */
