@@ -5,11 +5,11 @@
   var drummer1 = new Sequencer(drum1);
 
   drum1.on("play", function(){
-    $("#brownbear").addClass("bounce-7");
+    $("#brownbear").addClass("bounce");
   });
 
   drum1.on("end", function(){
-    $("#brownbear").removeClass("bounce-7");
+    $("#brownbear").removeClass("bounce");
   });
 
   $("#mute1").click(function(){
