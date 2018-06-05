@@ -1,3 +1,13 @@
+var playPauseSwitcher = function() {
+  if (drummer1.isPlaying) {
+    $('#playButton').html("<i class='fa fa-pause'></i>");
+  } else {
+    $('#playButton').html("<i class='fa fa-play'></i>");
+  }
+};
+
+var counter = new Counter();
+
 $('#playButton').click(function(){
   drummer1.playTrack();
   drummer2.playTrack();
@@ -7,6 +17,9 @@ $('#playButton').click(function(){
   drummer6.playTrack();
   drummer7.playTrack();
   drummer8.playTrack();
+  counter.playTrack();
+  playPauseSwitcher();
+  resetFlash();
 });
 
 $('#stopButton').click(function(){
@@ -18,4 +31,8 @@ $('#stopButton').click(function(){
   drummer6.stopTrack();
   drummer7.stopTrack();
   drummer8.stopTrack();
+  counter.stopTrack();
+  playPauseSwitcher();
+  resetFlash();
+  resetH1F1()
 });
