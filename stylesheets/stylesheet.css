@@ -200,24 +200,90 @@ label {
     display:inline-block;
 }
 
-.bounce {
+.bounceElephant {
   animation-duration: 0.6s;
   animation-iteration-count: 1;
-  animation-name: bounce;
+  animation-name: bounceElephant;
   animation-timing-function: cubic-bezier(0.280, 0.840, 0.420, 1);
 }
 
-@keyframes bounce {
+@keyframes bounceElephant {
     0%   { transform: scale(1,1)      translateY(0); }
     10%  { transform: scale(1.5,.6)   translateY(0); }
-    30%  { transform: scale(.7,1.3)   translateY(-100px); }
+    30%  { transform: scale(.7,1.3)   translateY(-30px); }
     50%  { transform: scale(1.05,.95) translateY(0); }
-    57%  { transform: scale(1,1)      translateY(-25px); }
+    57%  { transform: scale(1,1)      translateY(-20px); }
     64%  { transform: scale(1,1)      translateY(0); }
     100% { transform: scale(1,1)      translateY(0); }
 }
 
+.bounceBear {
+  animation-duration: 0.6s;
+  animation-iteration-count: 1;
+  animation-name: bounceBear;
+  animation-timing-function: cubic-bezier(0.280, 0.840, 0.420, 1);
+}
 
+@keyframes bounceBear {
+    0%   { transform: scale(1,1)      translateY(0); }
+    10%  { transform: scale(1.5,.6)   translateY(0); }
+    30%  { transform: scale(.7,1.3)   translateY(-50px); }
+    50%  { transform: scale(1.05,.95) translateY(0); }
+    57%  { transform: scale(1,1)      translateY(-20px); }
+    64%  { transform: scale(1,1)      translateY(0); }
+    100% { transform: scale(1,1)      translateY(0); }
+}
+
+.bounceCat {
+  animation-duration: 0.6s;
+  animation-iteration-count: 1;
+  animation-name: bounceCat;
+  animation-timing-function: cubic-bezier(0.280, 0.840, 0.420, 1);
+}
+
+@keyframes bounceCat {
+    0%   { transform: scale(1,1)      translateY(0); }
+    10%  { transform: scale(1.5,.6)   translateY(0); }
+    30%  { transform: scale(.7,1.3)   translateY(-70px); }
+    50%  { transform: scale(1.05,.95) translateY(0); }
+    57%  { transform: scale(1,1)      translateY(-20px); }
+    64%  { transform: scale(1,1)      translateY(0); }
+    100% { transform: scale(1,1)      translateY(0); }
+}
+
+.bouncePig {
+  animation-duration: 0.6s;
+  animation-iteration-count: 1;
+  animation-name: bouncePig;
+  animation-timing-function: cubic-bezier(0.280, 0.840, 0.420, 1);
+}
+
+@keyframes bouncePig {
+    0%   { transform: scale(1,1)      translateY(0); }
+    10%  { transform: scale(1.5,.6)   translateY(0); }
+    30%  { transform: scale(.7,1.3)   translateY(-20px); }
+    50%  { transform: scale(1.05,.95) translateY(0); }
+    57%  { transform: scale(1,1)      translateY(-20px); }
+    64%  { transform: scale(1,1)      translateY(0); }
+    100% { transform: scale(1,1)      translateY(0); }
+}
+
+.bounceRabbit {
+  animation-duration: 0.6s;
+  animation-iteration-count: 1;
+  animation-name: bounceRabbit;
+  animation-timing-function: cubic-bezier(0.280, 0.840, 0.420, 1);
+}
+
+@keyframes bounceRabbit {
+    0%   { transform: scale(1,1)      translateY(0); }
+    10%  { transform: scale(1.5,.6)   translateY(0); }
+    30%  { transform: scale(.7,1.3)   translateY(-100px); }
+    50%  { transform: scale(1.05,.95) translateY(0); }
+    57%  { transform: scale(1,1)      translateY(-20px); }
+    64%  { transform: scale(1,1)      translateY(0); }
+    100% { transform: scale(1,1)      translateY(0); }
+}
 
 /* buttons animation */
 
@@ -305,15 +371,5 @@ img {
       width: 50px;
       height: 50px;
       margin-left: 15px;
-    }
-
-    @keyframes bounce {
-        0%   { transform: scale(1,1)      translateY(0); }
-        10%  { transform: scale(1.5,.6)   translateY(0); }
-        30%  { transform: scale(.7,1.3)   translateY(-50px); }
-        50%  { transform: scale(1.05,.95) translateY(0); }
-        57%  { transform: scale(1,1)      translateY(-14px); }
-        64%  { transform: scale(1,1)      translateY(0); }
-        100% { transform: scale(1,1)      translateY(0); }
     }
 }
