@@ -1,5 +1,5 @@
   var drum8 = new Howl({
-    src: ['audio/realCowbell.mp3']
+    src: ['audio/technodrums/synthChord.mp3']
   });
 
   var drummer8 = new Sequencer(drum8);

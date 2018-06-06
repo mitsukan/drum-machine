@@ -1,8 +1,8 @@
 var playPauseSwitcher = function() {
   if (drummer1.isPlaying) {
-    $('#playButton').html("<i class='fa fa-pause'></i>");
+    $('#playButton').text("pause.");
   } else {
-    $('#playButton').html("<i class='fa fa-play'></i>");
+    $('#playButton').text("play.");
   }
 };
 
@@ -22,9 +22,6 @@ $('#playButton').click(function(){
   drummer8.playTrack();
   counter.playTrack();
   playPauseSwitcher();
-  resetFlash();
-  animalWalk();
-  backgroundGo();
 });
 
 $('#stopButton').click(function(){
@@ -40,6 +37,4 @@ $('#stopButton').click(function(){
   playPauseSwitcher();
   resetFlash();
   resetH1F1();
-  animalStand();
-  backgroundPause();
 });

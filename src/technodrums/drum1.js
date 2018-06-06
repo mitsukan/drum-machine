@@ -1,8 +1,15 @@
   var drum1 = new Howl({
-    src: ['audio/kick.mp3']
+    src: ['audio/technodrums/kick.mp3']
   });
 
   var drummer1 = new Sequencer(drum1);
+
+  drum1.on('play', function(){
+    $("body").addClass("animated-bg");
+    setTimeout(function(){
+      $("body").removeClass("animated-bg");
+    }, 410);
+  });
 
   $("#d1-1").click(function(){
     drummer1.toggleNoteState(0);

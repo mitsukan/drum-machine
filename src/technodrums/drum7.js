@@ -1,5 +1,5 @@
   var drum7 = new Howl({
-    src: ['audio/conga.mp3']
+    src: ['audio/technodrums/perc.mp3']
   });
 
   var drummer7 = new Sequencer(drum7);

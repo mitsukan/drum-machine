@@ -4,6 +4,12 @@
   align-items: center;
 }
 
+.textdiv {
+  width: 601px;
+  padding-top: 100px;
+  padding-bottom: 25px;
+}
+
 /* drum machine*/
 
 th {
@@ -20,17 +26,32 @@ li {
   display: inline;
 }
 
-#playButton{
-  width: 50px;
-  font-size: 12px;
-  margin-left: 10%;
-  margin-right: 2%;
+.TechnoButton {
+  text-align: left;
+  padding-left: 0px;
+  background: transparent;
+  border: none !important;
+  outline: none !important;
 }
 
-#stopButton{
-  width: 50px;
-  font-size: 12px;
-  margin-right: 2%;
+.TempoPlusButton {
+  padding-left: 10px;
+  background: transparent;
+  border: none !important;
+  outline: none !important;
+}
+
+.TempoMinusButton {
+  padding-left: 13px;
+  background: transparent;
+  border: none !important;
+  outline: none !important;
+}
+
+.TechnoButton:hover,
+.TempoPlusButton:hover,
+.TempoMinusButton:hover {
+  color: red;
 }
 
 .btn-group{
@@ -38,33 +59,6 @@ li {
   margin-right: 10%;
 }
 
-#tempoDisplay{
-  width: 70px;
-  padding-top: 5%;
-  border-radius: 1%;
-}
-
-#increaseTempo1{
-  font-size: 12px;
-  background-color: rgba(108, 108, 108, 0.93);
-}
-
-#increaseTempo10{
-  width:45px;
-  font-size: 12px;
-  background-color: rgba(108, 108, 108, 0.84);
-}
-
-#decreaseTempo1{
-  background-color: rgba(108, 108, 108, 0.93);
-  font-size: 12px;
-}
-
-#decreaseTempo10{
-  width:45px;
-  font-size: 12px;
-  background-color: rgba(108, 108, 108, 0.84);
-}
 
 /* buttons color change onclick */
 
@@ -72,4 +66,28 @@ li {
   font-size: 6px;
   width: 10px;
   height: 10px;
+}
+
+.badge-secondary {
+  /* color:rgb(255, 255, 255); */
+  background-color: rgba(132, 142, 150, 0.72);
+}
+
+.badge-light {
+  color:rgb(85, 85, 91);
+}
+
+body {
+  background-color: #eee;
+}
+
+/* background animation */
+
+.animated-bg {
+  animation: pulse 0.405s ease-out;
+}
+
+@keyframes pulse {
+  0% { background-color: #ddd;}
+  100% { background-color: #eee;}
 }
