@@ -25,20 +25,6 @@ var updateBPMDisplay = function() {
   });
 };
 
-var backgroundSpeedUpdate = function(){
-  if(counter.bpm >= 200){
-    $('.overlayAnimation').css("animation", "10s scroll200 infinite linear")
-  }else if(counter.bpm >= 160){
-    $('.overlayAnimation').css("animation", "10s scroll160 infinite linear")
-  }else if(counter.bpm <= 100){
-    $('.overlayAnimation').css("animation", "10s scroll100 infinite linear")
-  }else if(counter.bpm <= 60){
-    $('.overlayAnimation').css("animation", "10s scroll60 infinite linear")
-  }else{
-    $('.overlayAnimation').css("animation", "10s scroll infinite linear")
-  }
-}
-
 $('#decreaseTempo10').click(function(){
   resetFlash();
   drummer1.decreaseTempo(10);
