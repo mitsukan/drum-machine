@@ -11,7 +11,7 @@ table, th, td {
 }
 
 .drum-machine{
-  background: linear-gradient(#F2C584, #fafafa);
+  background: linear-gradient(#F2C584, #ffffff);
 }
 
 /* body{
@@ -242,7 +242,7 @@ th {
 .overlay {
   background: url('../gifs/parallaxBackground.jpg') repeat;
   display: block;
-  padding: 20% 5% 5% 5%;
+  padding: 11% 5% 5% 5%;
   background-size: contain;
 }
 
@@ -320,6 +320,12 @@ img {
   height: 100%;
 }
 
+@media only screen and (max-width: 1165px) {
+  .overlay {
+    padding: 17% 5% 5% 5%;
+  }
+}
+
 @media only screen and (max-width: 1040px) {
     .box{
       width: 85px;
@@ -348,7 +354,7 @@ img {
     .overlay{
       background-color: rgb(51, 15, 117);
       display: block;
-      padding: 30% 5% 5% 5%;
+      padding: 25% 5% 5% 5%;
     }
 
 }
