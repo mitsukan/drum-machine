@@ -12,9 +12,8 @@ var backgroundGo = function(){
 }
 
 var backgroundPause = function(){
-    $('.overlay').css("animation-play-state", "paused")
+  $('.overlay').css("animation-play-state", "paused")
 }
-
 
 
 var counter = new Counter();
