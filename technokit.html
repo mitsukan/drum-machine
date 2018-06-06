@@ -24,7 +24,7 @@
 
 	<div class="container">
 
-				<ul>
+				<!-- <ul>
           <li><button id="playButton" class="btn btn-danger" ><i class="fa fa-play"></i></button></li>
           <li><button id="stopButton" class="btn btn-dark"><i class="fa fa-stop"></i></button></li>
 					<li>
@@ -37,18 +37,35 @@
 								<i class="fa fa-caret-up"></i> 10</button>
 						</div>
 					</li>
-        </ul>
+        </ul> -->
 
 <div class="drum-center">
 	<div class="textdiv">
-		<p>Font testing</p>
+		<div>
+			<strong>beat makers.</strong><br>
+			<small>techno edition.</small>
+		</div>
+		<br>
+		<div>
+			<button class="TechnoButton" id="playButton">play.</button>
+			<br>
+			<button class="TechnoButton" id="stopButton">stop.</button>
+			<p>tempo:</p>
+			<h3>
+				<button class="TempoPlusButton" id="increaseTempo1">+</button>
+				<br>
+				<span id="tempoDisplay">120</span>
+				<br>
+				<button class="TempoMinusButton" id="decreaseTempo1">-</button>
+			</h3>
+		</div>
 	</div>
 </div>
 
 			<div class="drum-center">
       <table>
         <tr id="header">
-					<th><span id="h1" class="badge badge-secondary">1</span></th>
+					<th><span id="h1" class="badge">1</span></th>
 					<th></th>
 					<th></th>
 					<th></th>
@@ -219,7 +236,7 @@
 					<th><i id="mute8" class="fa fa-volume-up"></i></th>
 				</tr>
   	    <tr id="footer">
-					<th><span id="f1" class="badge badge-secondary">1</span></th>
+					<th><span id="f1" class="badge">1</span></th>
 					<th><span id="f2" class="badge">2</span></th>
 					<th><span id="f3" class="badge">3</span></th>
 					<th><span id="f4" class="badge">4</span></th>
@@ -252,7 +269,7 @@
   <script src="src/technodrums/drum7.js"></script>
   <script src="src/technodrums/drum8.js"></script>
 	<script src="src/technodrums/muteButtons.js"></script>
-	<script src="src/playStop.js"></script>
+	<script src="src/technodrums/playStopButtons.js"></script>
 	<script src="src/numberFlasher.js"></script>
 	<script src="src/tempoJquery.js"></script>
   <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>

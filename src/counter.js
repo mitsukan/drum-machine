@@ -19,6 +19,8 @@ Counter.prototype.playTrack = function(){
     this.pauseTrack();
   } else {
     this.isPlaying = true;
+    footerFlash(this.playHead);
+    headerFlash(this.playHead);
     this.updatePlayHead();
     this.tempoInterval = setInterval(function(){
       console.log(this.playHead);
