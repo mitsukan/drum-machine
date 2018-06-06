@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "start": "serve .",
-    "test": "cypress"
+    "test-with-coverage": "istanbul cover jasmine-node --captureExceptions spec/ && cat ./coverage/lcov.info | codacy-coverage && rm -rf ./coverage"
   },
   "repository": {
     "type": "git",
