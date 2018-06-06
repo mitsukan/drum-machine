@@ -3,10 +3,11 @@ table, th, td {
   text-align: center;
 }
 
-.container {
+.container-fluid {
     min-width:722px;
     width: auto !important;
     width:800px;
+    padding: 0 0 0 0;
 }
 
 /* body{
@@ -19,9 +20,6 @@ table, th, td {
   background-color: #131313;
   background-size: 20px 20px;
 } */
-
-
-
 
 /* drum machine*/
 
@@ -235,12 +233,61 @@ th {
 }
 
 /* animals display */
+/* background */
 
-.overlay{
-  background-color: rgb(51, 15, 117);
+.overlay {
+  /* position:fixed; */
+  background: url('../gifs/parallaxBackground.jpg') repeat;
+  /* top:0;
+  left:0; */
+  /* width:100%;
+  height:300px; */
   display: block;
   padding: 24% 5% 5% 5%;
+  background-size: contain;
+  /* opacity: 0.5; */
 }
+
+.overlayAnimation{
+  -webkit-animation:10s scroll infinite linear;
+  -moz-animation:10s scroll infinite linear;
+  -o-animation:10s scroll infinite linear;
+  -ms-animation:10s scroll infinite linear;
+  animation:10s scroll infinite linear;
+}
+
+@-webkit-keyframes scroll{
+  100%{
+    background-position:0px -3000px;
+  }
+}
+
+@-moz-keyframes scroll{
+  100%{
+    background-position:0px -3000px;
+  }
+}
+
+@-o-keyframes scroll{
+  100%{
+    background-position:-3000px 0px;
+  }
+}
+
+@-ms-keyframes scroll{
+  100%{
+    background-position:-3000px 0px;
+  }
+}
+
+@keyframes scroll{
+  100%{
+    background-position:-5000px 0px;
+  }
+}
+
+/* animals */
+
 
 .animals{
   text-align: center;
