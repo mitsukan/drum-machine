@@ -9,6 +9,9 @@ var playPauseSwitcher = function() {
 var counter = new Counter();
 
 $('#playButton').click(function(){
+  if (drummer1.isPlaying === false) {
+    resetFlash();
+  }
   drummer1.playTrack();
   drummer2.playTrack();
   drummer3.playTrack();
@@ -19,7 +22,6 @@ $('#playButton').click(function(){
   drummer8.playTrack();
   counter.playTrack();
   playPauseSwitcher();
-  resetFlash();
 });
 
 $('#stopButton').click(function(){
@@ -34,5 +36,5 @@ $('#stopButton').click(function(){
   counter.stopTrack();
   playPauseSwitcher();
   resetFlash();
-  resetH1F1()
+  resetH1F1();
 });

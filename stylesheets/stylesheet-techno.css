@@ -4,6 +4,12 @@
   align-items: center;
 }
 
+.textdiv {
+  width: 601px;
+  padding-top: 100px;
+  padding-bottom: 25px;
+}
+
 /* drum machine*/
 
 th {
@@ -72,4 +78,13 @@ li {
   font-size: 6px;
   width: 10px;
   height: 10px;
+}
+
+.badge-secondary {
+  /* color:rgb(255, 255, 255); */
+  background-color: rgba(132, 142, 150, 0.72);
+}
+
+.badge-light {
+  color:rgb(85, 85, 91);
 }
