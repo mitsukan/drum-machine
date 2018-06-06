@@ -30,6 +30,7 @@ $('#playButton').click(function(){
   counter.playTrack();
   playPauseSwitcher();
   resetFlash();
+  pauseAnimal();
   backgroundGo();
 });
 
@@ -46,5 +47,6 @@ $('#stopButton').click(function(){
   playPauseSwitcher();
   resetFlash();
   resetH1F1();
+  pauseAnimal();
   backgroundPause();
 });

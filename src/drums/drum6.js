@@ -5,15 +5,15 @@
   var drummer6 = new Sequencer(drum6);
 
   drum6.on("play", function(){
-    if($("#pig").hasClass("bounce")
+    if($("#pig").hasClass("bouncePig")
     ){
-      $("#pig").removeClass("bounce")
+      $("#pig").removeClass("bouncePig")
     }
-    $("#pig").addClass("bounce");
+    $("#pig").addClass("bouncePig");
   });
 
   drum6.on("end", function(){
-    $("#pig").removeClass("bounce");
+    $("#pig").removeClass("bouncePig");
   });
 
   $("#mute6").click(function(){
