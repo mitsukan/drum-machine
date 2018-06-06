@@ -30,12 +30,14 @@ li {
   font-size: 12px;
   margin-left: 10%;
   margin-right: 2%;
+  background-color: #4A6400;
 }
 
 #stopButton{
   width: 50px;
   font-size: 12px;
   margin-right: 2%;
+  background-color: #A6C46A;
 }
 
 .btn-group{
@@ -136,7 +138,7 @@ table{
   left: 0;
   right: 0;
   bottom: 0;
-  background-color: rgb(28, 97, 191);
+  background-color: #7A592C;
   -webkit-transition: .4s;
   transition: .4s;
 }
@@ -154,7 +156,7 @@ table{
 }
 
 input:checked + .slider {
-  background-color: #bebdbd;
+  background-color: #DBB274;
 }
 
 input:focus + .slider {
