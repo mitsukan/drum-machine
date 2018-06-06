@@ -1,8 +1,20 @@
   var drum3 = new Howl({
-    src: ['audio/snare.mp3']
+    src: ['audio/snare-0.4441ms.mp3']
   });
 
   var drummer3 = new Sequencer(drum3);
+
+  drum3.on("play", function(){
+    if($("#brownbear").hasClass("bounce")
+    ){
+      $("#brownbear").removeClass("bounce")
+    }
+    $("#brownbear").addClass("bounce");
+  });
+
+  drum3.on("end", function(){
+    $("#brownbear").removeClass("bounce");
+  });
 
   $("#mute3").click(function(){
     drummer3.muteTrack();

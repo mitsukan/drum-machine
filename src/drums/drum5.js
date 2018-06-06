@@ -1,8 +1,20 @@
   var drum5 = new Howl({
-    src: ['audio/openHat.mp3']
+    src: ['audio/openHat-0.4441ms.mp3']
   });
 
   var drummer5 = new Sequencer(drum5);
+
+  drum5.on("play", function(){
+    if($("#moose").hasClass("bounce")
+    ){
+      $("#moose").removeClass("bounce")
+    }
+    $("#moose").addClass("bounce");
+  });
+
+  drum5.on("end", function(){
+    $("#moose").removeClass("bounce");
+  });
 
   $("#mute5").click(function(){
     drummer5.muteTrack();

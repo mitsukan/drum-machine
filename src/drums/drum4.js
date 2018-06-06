@@ -1,8 +1,20 @@
   var drum4 = new Howl({
-    src: ['audio/closedHat.mp3']
+    src: ['audio/closedHat-0.4441ms.mp3']
   });
 
   var drummer4 = new Sequencer(drum4);
+
+  drum4.on("play", function(){
+    if($("#cat").hasClass("bounce")
+    ){
+      $("#cat").removeClass("bounce")
+    }
+    $("#cat").addClass("bounce");
+  });
+
+  drum4.on("end", function(){
+    $("#cat").removeClass("bounce");
+  });
 
   $("#mute4").click(function(){
     drummer4.muteTrack();
