@@ -22,7 +22,6 @@ $('#playButton').click(function(){
   drummer8.playTrack();
   counter.playTrack();
   playPauseSwitcher();
-  resetFlash();
   animalWalk();
   backgroundGo();
 });

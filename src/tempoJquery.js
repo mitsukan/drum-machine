@@ -39,6 +39,7 @@ $('#decreaseTempo10').click(function(){
   playAllTracksTwice();
   updateBPMDisplay();
   backgroundSpeedUpdate();
+  animalRun();
 });
 
 $('#decreaseTempo1').click(function(){
@@ -55,6 +56,7 @@ $('#decreaseTempo1').click(function(){
   playAllTracksTwice();
   updateBPMDisplay();
   backgroundSpeedUpdate();
+  animalRun();
 });
 
 $('#increaseTempo1').click(function(){
@@ -71,6 +73,7 @@ $('#increaseTempo1').click(function(){
   playAllTracksTwice();
   updateBPMDisplay();
   backgroundSpeedUpdate();
+  animalRun();
 });
 
 $('#increaseTempo10').click(function(){
@@ -87,4 +90,5 @@ $('#increaseTempo10').click(function(){
   playAllTracksTwice();
   updateBPMDisplay();
   backgroundSpeedUpdate();
+  animalRun();
 });
