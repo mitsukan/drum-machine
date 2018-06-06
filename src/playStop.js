@@ -6,6 +6,16 @@ var playPauseSwitcher = function() {
   }
 };
 
+var backgroundGo = function(){
+  $('.overlay').addClass("overlayAnimation");
+  $('.overlay').css("animation-play-state", "running")
+}
+
+var backgroundPause = function(){
+  $('.overlay').css("animation-play-state", "paused")
+}
+
+
 var counter = new Counter();
 
 $('#playButton').click(function(){
@@ -20,6 +30,7 @@ $('#playButton').click(function(){
   counter.playTrack();
   playPauseSwitcher();
   resetFlash();
+  backgroundGo();
 });
 
 $('#stopButton').click(function(){
@@ -34,5 +45,6 @@ $('#stopButton').click(function(){
   counter.stopTrack();
   playPauseSwitcher();
   resetFlash();
-  resetH1F1()
+  resetH1F1();
+  backgroundPause();
 });
