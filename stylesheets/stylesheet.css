@@ -31,6 +31,7 @@ li {
   margin-left: 10%;
   margin-right: 2%;
   background-color: #4A6400;
+  border-color: #4A6400;
 }
 
 #stopButton{
@@ -38,6 +39,7 @@ li {
   font-size: 12px;
   margin-right: 2%;
   background-color: #A6C46A;
+  border-color: #A6C46A;
 }
 
 .btn-group{
@@ -49,28 +51,33 @@ li {
   width: 70px;
   padding-top: 5%;
   border-radius: 1%;
+  background-color: rgb(80, 48, 54);
 }
 
 #increaseTempo1{
   font-size: 12px;
-  background-color: rgba(108, 108, 108, 0.93);
+  background-color: rgb(140, 122, 119);
+  border-color: rgb(140, 122, 119);
 }
 
 #increaseTempo10{
   width:45px;
   font-size: 12px;
-  background-color: rgba(108, 108, 108, 0.84);
+  background-color: rgb(127, 101, 96);
+  border-color: rgb(127, 101, 96);
 }
 
 #decreaseTempo1{
-  background-color: rgba(108, 108, 108, 0.93);
+  background-color: rgb(140, 122, 119);
   font-size: 12px;
+  border-color: rgb(140, 122, 119);
 }
 
 #decreaseTempo10{
   width:45px;
   font-size: 12px;
-  background-color: rgba(108, 108, 108, 0.84);
+  background-color: rgb(127, 101, 96);
+  border-color: rgb(127, 101, 96);
 }
 
 table{
