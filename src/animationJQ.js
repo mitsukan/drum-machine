@@ -1,23 +1,23 @@
 var animalWalk = function(){
-  $("#elephantwalk").attr("src", "./gifs/elephantwalk180.gif")
-  $("#pandawalk").attr("src", "./gifs/pandawalk130.gif")
-  $("#brownbearwalk").attr("src", "./gifs/brownbearwalk120.gif")
-  $("#catwalk").attr("src", "./gifs/catwalk85.gif")
-  $("#moosewalk").attr("src", "./gifs/moosewalk128.gif")
-  $("#pigwalk").attr("src", "./gifs/pigwalk80.gif")
-  $("#rabbitwalk").attr("src", "./gifs/rabbitwalk43.gif")
-  $("#polarbearstand360").attr("src", "./gifs/polarbearwalk140.gif")
+  $("#elephantwalk").attr("src", "./gifs/walk/elephantwalk180.gif")
+  $("#pandawalk").attr("src", "./gifs/walk/pandawalk130.gif")
+  $("#brownbearwalk").attr("src", "./gifs/walk/brownbearwalk120.gif")
+  $("#catwalk").attr("src", "./gifs/walk/catwalk85.gif")
+  $("#moosewalk").attr("src", "./gifs/walk/moosewalk128.gif")
+  $("#pigwalk").attr("src", "./gifs/walk/pigwalk80.gif")
+  $("#rabbitwalk").attr("src", "./gifs/walk/rabbitwalk60.gif")
+  $("#polarbearstand360").attr("src", "./gifs/walk/polarbearwalk140.gif")
 };
 
 var animalStand = function(){
-  $("#elephantwalk").attr("src", "./gifs/elephantstand500.gif")
-  $("#pandawalk").attr("src", "./gifs/pandastand340.gif")
-  $("#brownbearwalk").attr("src", "./gifs/brownbearstand315.gif")
-  $("#catwalk").attr("src", "./gifs/catstand200.gif")
-  $("#moosewalk").attr("src", "./gifs/moosestand350.gif")
-  $("#pigwalk").attr("src", "./gifs/pigstand325.gif")
-  $("#rabbitwalk").attr("src", "./gifs/rabbitstand120.gif")
-  $("#polarbearstand360").attr("src", "./gifs/polarbearstand360.gif")
+  $("#elephantwalk").attr("src", "./gifs/stand/elephantstand500.gif")
+  $("#pandawalk").attr("src", "./gifs/stand/pandastand340.gif")
+  $("#brownbearwalk").attr("src", "./gifs/stand/brownbearstand315.gif")
+  $("#catwalk").attr("src", "./gifs/stand/catstand200.gif")
+  $("#moosewalk").attr("src", "./gifs/stand/moosestand350.gif")
+  $("#pigwalk").attr("src", "./gifs/stand/pigstand325.gif")
+  $("#rabbitwalk").attr("src", "./gifs/stand/rabbitstand120.gif")
+  $("#polarbearstand360").attr("src", "./gifs/stand/polarbearstand360.gif")
 }
 
 var backgroundGo = function(){
