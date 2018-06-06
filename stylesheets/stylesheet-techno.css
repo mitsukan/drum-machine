@@ -88,3 +88,14 @@ li {
 .badge-light {
   color:rgb(85, 85, 91);
 }
+
+/* background animation */
+
+.animated-bg {
+  animation: pulse 0.405s ease-in-out;
+}
+
+@keyframes pulse {
+  0% { background-color: #ddd;}
+  100% { background-color: white;}
+}

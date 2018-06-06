@@ -4,6 +4,13 @@
 
   var drummer1 = new Sequencer(drum1);
 
+  drum1.on('play', function(){
+    $("body").addClass("animated-bg");
+    setTimeout(function(){
+      $("body").removeClass("animated-bg");
+    }, 410);
+  });
+
   $("#d1-1").click(function(){
     drummer1.toggleNoteState(0);
     drummer1.sound.play();
