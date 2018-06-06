@@ -5,15 +5,15 @@
   var drummer5 = new Sequencer(drum5);
 
   drum5.on("play", function(){
-    if($("#moose").hasClass("bounce")
+    if($("#moose").hasClass("bounceBear")
     ){
-      $("#moose").removeClass("bounce")
+      $("#moose").removeClass("bounceBear")
     }
-    $("#moose").addClass("bounce");
+    $("#moose").addClass("bounceBear");
   });
 
   drum5.on("end", function(){
-    $("#moose").removeClass("bounce");
+    $("#moose").removeClass("bounceBear");
   });
 
   $("#mute5").click(function(){

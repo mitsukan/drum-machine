@@ -25,6 +25,20 @@ var updateBPMDisplay = function() {
   });
 };
 
+var backgroundSpeedUpdate = function(){
+  if(counter.bpm >= 200){
+    $('.overlayAnimation').css("animation", "10s scroll200 infinite linear")
+  }else if(counter.bpm >= 160){
+    $('.overlayAnimation').css("animation", "10s scroll160 infinite linear")
+  }else if(counter.bpm <= 100){
+    $('.overlayAnimation').css("animation", "10s scroll100 infinite linear")
+  }else if(counter.bpm <= 60){
+    $('.overlayAnimation').css("animation", "10s scroll60 infinite linear")
+  }else{
+    $('.overlayAnimation').css("animation", "10s scroll infinite linear")
+  }
+}
+
 $('#decreaseTempo10').click(function(){
   resetFlash();
   drummer1.decreaseTempo(10);
@@ -38,6 +52,7 @@ $('#decreaseTempo10').click(function(){
   counter.decreaseTempo(10);
   playAllTracksTwice();
   updateBPMDisplay();
+  backgroundSpeedUpdate();
 });
 
 $('#decreaseTempo1').click(function(){
@@ -53,6 +68,7 @@ $('#decreaseTempo1').click(function(){
   counter.decreaseTempo(1);
   playAllTracksTwice();
   updateBPMDisplay();
+  backgroundSpeedUpdate();
 });
 
 $('#increaseTempo1').click(function(){
@@ -68,6 +84,7 @@ $('#increaseTempo1').click(function(){
   counter.increaseTempo(1);
   playAllTracksTwice();
   updateBPMDisplay();
+  backgroundSpeedUpdate();
 });
 
 $('#increaseTempo10').click(function(){
@@ -83,4 +100,5 @@ $('#increaseTempo10').click(function(){
   counter.increaseTempo(10);
   playAllTracksTwice();
   updateBPMDisplay();
+  backgroundSpeedUpdate();
 });
