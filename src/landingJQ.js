@@ -17,3 +17,11 @@ $(".right").mouseleave(function(){
    $(this).css("-webkit-filter", "blur(5px)");
    $(this).css("filter", "blur(5px)");
 });
+
+$(".logo").mouseenter(function(){
+  $("#beatmakers").attr("src", "/landingpics/logoRed.png");
+});
+
+$(".logo").mouseleave(function(){
+  $("#beatmakers").attr("src", "/landingpics/logoBlack.png");
+});
