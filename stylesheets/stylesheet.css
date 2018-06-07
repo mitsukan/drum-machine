@@ -337,7 +337,7 @@ th {
 .overlay {
   background: url('../gifs/parallaxBackground.jpg') repeat;
   display: block;
-  padding: 11% 5% 5% 5%;
+  padding: 20% 5% 5% 5%;
   background-size: contain;
 }
 
