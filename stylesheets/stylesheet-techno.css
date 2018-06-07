@@ -91,3 +91,20 @@ body {
   0% { background-color: #ddd;}
   100% { background-color: #eee;}
 }
+
+/* home button */
+
+#homeButton{
+  display: flex !important; */
+  align-items: center !important;
+  justify-content: center !important;
+}
+
+a{
+  color: rgb(0, 0, 0);
+}
+
+a:hover{
+  color: red;
+  text-decoration: none;
+}
