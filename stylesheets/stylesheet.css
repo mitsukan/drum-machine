@@ -14,6 +14,36 @@ table, th, td {
   background: linear-gradient(#F2C584, #ffffff);
 }
 
+/* home button */
+
+/* #homeButton{
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+}
+
+.btn-outline-dark{
+  width: 12% !important;
+  height: 2% !important;
+  font-size: 8px !important;
+} */
+
+#homeButton{
+  display: flex !important; */
+  align-items: center !important;
+  justify-content: center !important;
+}
+
+a{
+  color: #866334;
+  font-family: monospace;
+}
+
+a:hover{
+  color: #5b411e;
+  text-decoration: none;
+}
+
 /* drum machine*/
 
 ul{
