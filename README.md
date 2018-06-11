@@ -1,6 +1,6 @@
 # Drum Machine by BeatMakers
 
-The Drum Machine by Beat Makers is SPA sound sequencer that imitates drum kits or other percussion instruments.
+The Drum Machine by Beat Makers is a sound sequencer that imitates drum kits or other percussion instruments.
 
 ## Getting Started
 
